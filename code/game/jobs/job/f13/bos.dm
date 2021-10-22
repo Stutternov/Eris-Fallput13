@@ -2,9 +2,7 @@
 /datum/job/elder
 	title = "Elder"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 0
@@ -41,9 +39,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/headpaladin
 	title = "Head Paladin"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 1
@@ -68,9 +64,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/headscribe
 	title = "Head Scribe"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 1
@@ -95,9 +89,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/knightcaptain
 	title = "Knight Captain"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 1
@@ -123,9 +115,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/seniorpaladin
 	title = "Senior Paladin"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the head paladin"
@@ -149,9 +139,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/seniorscribe
 	title = "Senior Scribe"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the head scribe"
@@ -175,9 +163,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/seniorknight
 	title = "Senior Knight"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the head knight and, depending on the situation, the paladin caste"
@@ -201,9 +187,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/paladin
 	title = "Paladin"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the senior paladin and head paladin"
@@ -227,9 +211,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/scribe
 	title = "Scribe"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "senior scribes and head scribes"
@@ -252,9 +234,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/knight
 	title = "Knight"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "senior knights, head knights and, depending on the situation, the paladin caste"
@@ -277,9 +257,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /datum/job/initiate
 	title = "Initiate"
 	department_flag = DEPARTMENT_BOS
-	selection_color = "#95a5a6"
 	department = DEPARTMENT_BOS
-	faction = "Bortherhood of Steel"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "anyone within your aspiring caste"
