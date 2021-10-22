@@ -37,7 +37,7 @@
 #define DEPARTMENT_TOWN
 
 #define JOBS_WASTELAND	"Waster", "Bandit", "Outlaw"
-#define JOBS_NCR		"Colonel", "Captain", "Lieutenant", "Medical Officer", "First Sergeant", "Sergeant", "Corporal", "Military Police","Combat Medic", "Combat Engineer", "Heavy Trooper", "Trooper", "NCR Recruit", "NCR Off Duty", "Veteran Ranger", "Ranger Sergeant", "Ranger"
+#define JOBS_NCR		"Captain", "Lieutenant", "Medical Officer", "First Sergeant", "Sergeant", "Corporal", "Military Police", "Combat Medic", "Combat Engineer", "Heavy Trooper", "Trooper", "NCR Recruit", "NCR Off Duty", "Veteran Ranger", "Ranger Sergeant", "Ranger"
 #define JOBS_LEGION		"Legate", "Centurion", "Orator", "Priestess", "Veteran Decanus", "Prime Decanus", "Recruit Decanus", "Vexillarius", "Venator", "Explorer", "Libritor", "Veteran Legionary", "Legionary", "Recruit Legionary", "Camp Prefect", "Auxilia", "Camp Follower", "Legion Slave", "Legion Off Duty"
 #define JOBS_BOS		"Elder", "Head Paladin", "Senior Paladin", "Paladin", "Knight Captain", "Senior Knight", "Knight", "Head Scribe", "Senior Scribe", "Scribe", "Initiate", "BOS Off Duty"
 #define JOBS_KHAN		"Head Khan", "Lead Runner", "Runner", "Peddler", "Khemist", "Scout", "New Blood"

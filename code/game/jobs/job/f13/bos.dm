@@ -134,7 +134,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /obj/landmark/join/start/seniorpaladin
 	name = "Senior Paladin"
 	icon_state = "player-gold"
-	join_tag = /adtum/job/seniorpaladin
+	join_tag = /datum/job/seniorpaladin
 
 /datum/job/seniorscribe
 	title = "Senior Scribe"
@@ -158,7 +158,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /obj/landmark/join/start/seniorscribe
 	name = "Senior Scribe"
 	icon_state = "player-gold"
-	join_tag = /adtum/job/seniorscribe
+	join_tag = /datum/job/seniorscribe
 
 /datum/job/seniorknight
 	title = "Senior Knight"
@@ -182,7 +182,7 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 /obj/landmark/join/start/seniorknight
 	name = "Senior Knight"
 	icon_state = "player-gold"
-	join_tag = /adtum/job/seniorknight
+	join_tag = /datum/job/seniorknight
 
 /datum/job/paladin
 	title = "Paladin"
