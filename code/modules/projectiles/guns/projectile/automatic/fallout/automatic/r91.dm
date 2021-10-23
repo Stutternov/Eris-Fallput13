@@ -67,9 +67,8 @@
 
 	recoil_buildup = 1.8
 	damage_multiplier = 0.9 //Better control, worse damage
-	penetration_multiplier = 1.2
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
-	price_tag = 3500
+	price_tag = 500
 
 /obj/item/gun/projectile/automatic/r91/folding/CtrlShiftClick()
 	. = ..()
@@ -104,3 +103,50 @@
 
 	playsound(src.loc, 'sound/weapons/guns/interact/selector.ogg', 100, 1)
 	update_icon()
+
+/obj/item/gun/projectile/automatic/r91/infiltrator
+	name = "R91 Assault Rifle"
+	desc = "Manufactured by Stent Security Solutions, the R91 found itself as the offical main armament of the National Guard before the Great War. \
+			Though these relics have aged over the last 200 years the dust, dirt and grime doesn't seem to be able to stop the rifle's bolt from chugging along! \
+			This one appears to have a folding stock; allowing it to become compact on a moments notice."
+	icon = 'icons/obj/guns/projectile/r91/folding.dmi'
+	icon_state = "infl"
+	item_state = "infl"
+	recoil_buildup = 1.5
+	damage_multiplier = 1.1
+	penetration_multiplier = 1.2
+	zoom_factor = 0.8
+	silenced = TRUE
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	price_tag = 800
+
+/obj/item/gun/projectile/automatic/r91/infiltrator/CtrlShiftClick()
+	. = ..()
+
+	if((!ishuman(usr) && (src.loc != usr)) || usr.stat || usr.restrained())
+		return
+
+	fold()
+
+
+/obj/item/gun/projectile/automatic/r91/infiltrator/verb/quick_fold()
+	set name = "Fold or Unfold Stock"
+	set category = "Object"
+	set src in view(1)
+
+	if((!ishuman(usr) && (src.loc != usr)) || usr.stat || usr.restrained())
+		return
+	fold()
+
+/obj/item/gun/projectile/automatic/r91/infiltrator/proc/fold()
+
+	if(folded)
+		to_chat(usr, SPAN_NOTICE("You unfold the stock on the [src]."))
+		recoil_buildup = 1.3
+		w_class = ITEM_SIZE_BULKY
+		folded = FALSE
+	else
+		to_chat(usr, SPAN_NOTICE("You fold the stock on the [src]."))
+		recoil_buildup = 1.5
+		w_class = ITEM_SIZE_NORMAL
+		folded = TRUE

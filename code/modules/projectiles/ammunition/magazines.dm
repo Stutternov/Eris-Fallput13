@@ -312,6 +312,27 @@
 	rarity_value = 10
 
 
+/////////////.22 SMG/////////////
+
+/obj/item/ammo_magazine/cssmg
+	name = ".22 LR pan-mag"
+	icon_state = "maxim_l"
+	ammo_color = "-l"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	mag_well = MAG_WELL_PAN
+	matter = list(MATERIAL_STEEL = 3)
+	caliber = CAL_22
+	ammo_type = /obj/item/ammo_casing/pistol
+	max_ammo = 180
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/cssmg/rubber
+	icon_state = "maxim_l"
+	ammo_color = "-r"
+	ammo_type = /obj/item/ammo_casing/pistol/rubber
+
+
 /////////////9mm SMG/////////////
 
 /obj/item/ammo_magazine/smg
