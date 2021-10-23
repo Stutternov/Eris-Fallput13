@@ -150,14 +150,14 @@
 	rarity_value = 5
 	spawn_tags = SPAWN_TAG_AMMO_COMMON
 
-//// . 25 CASELESS ////
+//// . 22 CASELESS ////
 
 /obj/item/ammo_magazine/ammobox/clrifle
 	name = "ammunition box (.25 Caseless Rifle)"
 	icon_state = "box_clrifle_l"
 	matter = list(MATERIAL_STEEL = 60)
 	w_class = ITEM_SIZE_BULKY
-	caliber = CAL_CLRIFLE
+	caliber = CAL_22
 	ammo_type = /obj/item/ammo_casing/clrifle
 	max_ammo = 240
 	spawn_tags = SPAWN_TAG_AMMO_IH
@@ -173,7 +173,7 @@
 	name = "ammunition packet (.25 Caseless Rifle)"
 	icon_state = "clrifle_l"
 	matter = list(MATERIAL_STEEL = 20, MATERIAL_CARDBOARD = 1)
-	caliber = CAL_CLRIFLE
+	caliber = CAL_22
 	ammo_type = /obj/item/ammo_casing/clrifle
 	max_ammo = 60
 

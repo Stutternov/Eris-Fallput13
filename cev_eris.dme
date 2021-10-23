@@ -2414,6 +2414,8 @@
 #include "code\modules\projectiles\guns\projectile\automatic\wintermute.dm"
 #include "code\modules\projectiles\guns\projectile\automatic\z8.dm"
 #include "code\modules\projectiles\guns\projectile\automatic\zoric.dm"
+#include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\ak112.dm"
+#include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\r91.dm"
 #include "code\modules\projectiles\guns\projectile\battle_rifle\boltgun.dm"
 #include "code\modules\projectiles\guns\projectile\battle_rifle\kovacs.dm"
 #include "code\modules\projectiles\guns\projectile\battle_rifle\type47.dm"

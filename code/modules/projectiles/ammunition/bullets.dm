@@ -1,7 +1,56 @@
+//// .22 ////
 
-//// .35 ////
+/obj/item/ammo_casing/clrifle
+	desc = "A .25 Caseless Rifle bullet casing."
+	icon_state = "clrifle_c_l"
+	spent_icon = "clrifle_c_l-spent"
+	caliber = CAL_22
+	projectile_type = /obj/item/projectile/bullet/clrifle
+	is_caseless = TRUE
+	maxamount = 20
+
+	sprite_update_spawn = TRUE
+	sprite_max_rotate = 32
+	sprite_scale = 0.3
+
+/obj/item/ammo_casing/clrifle/practice
+	desc = "A .25 Caseless Rifle practice bullet casing."
+	icon_state = "clrifle_c_p"
+	spent_icon = "clrifle_c_p-spent"
+	caliber = CAL_22
+	projectile_type = /obj/item/projectile/bullet/clrifle/practice
+	is_caseless = TRUE
+
+/obj/item/ammo_casing/clrifle/hv
+	desc = "A .25 Caseless Rifle high-velocity bullet casing."
+	icon_state = "clrifle_c_hv"
+	spent_icon = "clrifle_c_hv-spent"
+	caliber = CAL_22
+	projectile_type = /obj/item/projectile/bullet/clrifle/hv
+	is_caseless = TRUE
+
+/obj/item/ammo_casing/clrifle/rubber
+	desc = "A .25 Caseless Rifle rubber bullet casing."
+	icon_state = "clrifle_c_r"
+	spent_icon = "clrifle_c_r-spent"
+	caliber = CAL_22
+	projectile_type = /obj/item/projectile/bullet/clrifle/rubber
+	is_caseless = TRUE
+
+/obj/item/ammo_casing/clrifle/scrap
+	desc = "An old .25 Caseless Rifle bullet casing."
+	icon_state = "clrifle_c_s"
+	spent_icon = "clrifle_c_s-spent"
+	caliber = CAL_22
+	projectile_type = /obj/item/projectile/bullet/clrifle/scrap
+
+/obj/item/ammo_casing/clrifle/scrap/prespawned
+	amount = 10
+
+
+//// 9mm ////
 /obj/item/ammo_casing/pistol
-	desc = "A .35 Auto bullet casing."
+	desc = "A 9mm bullet casing."
 	icon_state = "pistol_c_l"
 	spent_icon = "pistol_c_l-spent"
 	caliber = CAL_PISTOL
@@ -13,28 +62,28 @@
 	sprite_scale = 0.5
 
 /obj/item/ammo_casing/pistol/hv
-	desc = "A .35 Auto high-velocity bullet casing."
+	desc = "A 9mm high-velocity bullet casing."
 	icon_state = "pistol_c_hv"
 	spent_icon = "pistol_c_hv-spent"
 	caliber = CAL_PISTOL
 	projectile_type = /obj/item/projectile/bullet/pistol/hv
 
 /obj/item/ammo_casing/pistol/practice
-	desc = "A .35 Auto practice bullet casing."
+	desc = "A 9mm practice bullet casing."
 	icon_state = "pistol_c_p"
 	spent_icon = "pistol_c_p-spent"
 	caliber = CAL_PISTOL
 	projectile_type = /obj/item/projectile/bullet/pistol/practice
 
 /obj/item/ammo_casing/pistol/rubber
-	desc = "A .35 Auto rubber bullet casing."
+	desc = "A 9mm rubber bullet casing."
 	icon_state = "pistol_c_r"
 	spent_icon = "pistol_c_r-spent"
 	caliber = CAL_PISTOL
 	projectile_type = /obj/item/projectile/bullet/pistol/rubber
 
 /obj/item/ammo_casing/pistol/scrap
-	desc = "An old .35 Auto bullet casing."
+	desc = "An old 9mm bullet casing."
 	icon_state = "pistol_c_s"
 	spent_icon = "pistol_c_s-spent"
 	caliber = CAL_PISTOL
@@ -42,6 +91,52 @@
 
 /obj/item/ammo_casing/pistol/scrap/prespawned
 	amount = 15
+
+
+//// 10mm ////
+/obj/item/ammo_casing/pistol
+	desc = "A 10mm bullet casing."
+	icon_state = "pistol_c_l"
+	spent_icon = "pistol_c_l-spent"
+	caliber = CAL_PISTOL
+	projectile_type = /obj/item/projectile/bullet/pistol
+	maxamount = 12
+
+	sprite_update_spawn = TRUE
+	sprite_max_rotate = 32
+	sprite_scale = 0.55
+
+/obj/item/ammo_casing/pistol/hv
+	desc = "A 9mm high-velocity bullet casing."
+	icon_state = "pistol_c_hv"
+	spent_icon = "pistol_c_hv-spent"
+	caliber = CAL_PISTOL
+	projectile_type = /obj/item/projectile/bullet/pistol/hv
+
+/obj/item/ammo_casing/pistol/practice
+	desc = "A 9mm practice bullet casing."
+	icon_state = "pistol_c_p"
+	spent_icon = "pistol_c_p-spent"
+	caliber = CAL_PISTOL
+	projectile_type = /obj/item/projectile/bullet/pistol/practice
+
+/obj/item/ammo_casing/pistol/rubber
+	desc = "A 9mm rubber bullet casing."
+	icon_state = "pistol_c_r"
+	spent_icon = "pistol_c_r-spent"
+	caliber = CAL_PISTOL
+	projectile_type = /obj/item/projectile/bullet/pistol/rubber
+
+/obj/item/ammo_casing/pistol/scrap
+	desc = "An old 9mm bullet casing."
+	icon_state = "pistol_c_s"
+	spent_icon = "pistol_c_s-spent"
+	caliber = CAL_PISTOL
+	projectile_type = /obj/item/projectile/bullet/pistol/scrap
+
+/obj/item/ammo_casing/pistol/scrap/prespawned
+	amount = 12
+
 
 //// .40 ////
 
@@ -51,11 +146,11 @@
 	icon_state = "magnum_c_l"
 	spent_icon = "magnum_c_l-spent"
 	projectile_type = /obj/item/projectile/bullet/magnum
-	maxamount = 6
+	maxamount = 8
 
 	sprite_update_spawn = TRUE
 	sprite_max_rotate = 32
-	sprite_scale = 0.5
+	sprite_scale = 0.6
 
 /obj/item/ammo_casing/magnum/practice
 	desc = "A .40 Magnum practice bullet casing."
@@ -86,7 +181,7 @@
 	projectile_type = /obj/item/projectile/bullet/magnum/scrap
 
 /obj/item/ammo_casing/magnum/scrap/prespawned
-	amount = 6
+	amount = 8
 
 //// .20 ////
 
@@ -131,55 +226,6 @@
 	projectile_type = /obj/item/projectile/bullet/srifle/scrap
 
 /obj/item/ammo_casing/srifle/scrap/prespawned
-	amount = 10
-
-//// .25 ////
-
-/obj/item/ammo_casing/clrifle
-	desc = "A .25 Caseless Rifle bullet casing."
-	icon_state = "clrifle_c_l"
-	spent_icon = "clrifle_c_l-spent"
-	caliber = CAL_CLRIFLE
-	projectile_type = /obj/item/projectile/bullet/clrifle
-	is_caseless = TRUE
-	maxamount = 10
-
-	sprite_update_spawn = TRUE
-	sprite_max_rotate = 32
-	sprite_scale = 0.5
-
-/obj/item/ammo_casing/clrifle/practice
-	desc = "A .25 Caseless Rifle practice bullet casing."
-	icon_state = "clrifle_c_p"
-	spent_icon = "clrifle_c_p-spent"
-	caliber = CAL_CLRIFLE
-	projectile_type = /obj/item/projectile/bullet/clrifle/practice
-	is_caseless = TRUE
-
-/obj/item/ammo_casing/clrifle/hv
-	desc = "A .25 Caseless Rifle high-velocity bullet casing."
-	icon_state = "clrifle_c_hv"
-	spent_icon = "clrifle_c_hv-spent"
-	caliber = CAL_CLRIFLE
-	projectile_type = /obj/item/projectile/bullet/clrifle/hv
-	is_caseless = TRUE
-
-/obj/item/ammo_casing/clrifle/rubber
-	desc = "A .25 Caseless Rifle rubber bullet casing."
-	icon_state = "clrifle_c_r"
-	spent_icon = "clrifle_c_r-spent"
-	caliber = CAL_CLRIFLE
-	projectile_type = /obj/item/projectile/bullet/clrifle/rubber
-	is_caseless = TRUE
-
-/obj/item/ammo_casing/clrifle/scrap
-	desc = "An old .25 Caseless Rifle bullet casing."
-	icon_state = "clrifle_c_s"
-	spent_icon = "clrifle_c_s-spent"
-	caliber = CAL_CLRIFLE
-	projectile_type = /obj/item/projectile/bullet/clrifle/scrap
-
-/obj/item/ammo_casing/clrifle/scrap/prespawned
 	amount = 10
 
 //// .30 ////
