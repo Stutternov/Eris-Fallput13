@@ -1,19 +1,18 @@
-/obj/item/gun/projectile/automatic/ak112
-	name = "AK 112"
-	desc = "A pre-war ancient weapon made nearly a hundred years even prior to the Great War! \
-		 These guns could be found all over national guard armories as well as in the hands of private citizens prior to the war. \
-		 Cheap to make, easy to produce, reliable and using the 5mm round made this gun once prefered by the U.S Military as an axuilary firearm and among foreign militaries."
-	icon = 'icons/obj/guns/projectile/ak112.dmi'
-	icon_state = "ak112"
-	item_state = "ak112"
+/obj/item/gun/projectile/automatic/type93
+	name = "Type 93 Assault Rifle"
+	desc = "A gun with the letters \"型-93\" on its receiver next to the selector, sporting a few options on this cheap yet well-crafted rifle. \
+		 	These rifles are rare finds, likely used by Chinese infiltrators prior to the Great War. Though they're well worth the work put into finding them, these can go for years without maintence!"
+	icon = 'icons/obj/guns/projectile/type93.dmi'
+	icon_state = "type93"
+	item_state = "type93"
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
-	caliber = CAL_MINI
+	caliber = CAL_RIFLE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_COVERT = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	magazine_type = /obj/item/ammo_magazine/rifle_5mm
+	magazine_type = /obj/item/ammo_magazine/rifle
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
 	price_tag = 600
 	fire_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
@@ -29,7 +28,7 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/weapon/gun/projectile/automatic/ak112/update_icon()
+/obj/item/weapon/gun/projectile/automatic/type93/update_icon()
 	..()
 
 	var/iconstring = initial(icon_state)
@@ -47,6 +46,6 @@
 	icon_state = iconstring
 	set_item_state(itemstring)
 
-/obj/item/weapon/gun/projectile/automatic/ak112/Initialize()
+/obj/item/weapon/gun/projectile/automatic/type93/Initialize()
 	. = ..()
 	update_icon()

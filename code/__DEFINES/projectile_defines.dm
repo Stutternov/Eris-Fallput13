@@ -16,7 +16,6 @@
 #define CAL_LRIFLE	"7.62"
 #define CAL_ANTIM	".50 MG"
 #define CAL_SHOTGUN	"12 Gauge Shell"
-#define CAL_HSHOTGUN "20 Gauge Shell"
 #define CAL_70		".70"
 
 //Misc
@@ -28,9 +27,9 @@
 #define CAL_CROSSBOW "bolt"
 
 //Gun loading types
-#define SINGLE_CASING 		1	//The gun only accepts ammo_casings. ammo_magazines should never have this as their mag_type.
-#define SPEEDLOADER 		2	//Transfers casings from the mag to the gun when used.
-#define MAGAZINE 			4	//The magazine item itself goes inside the gun
+#define SINGLE_CASING 		1		//The gun only accepts ammo_casings. ammo_magazines should never have this as their mag_type.
+#define SPEEDLOADER 		2		//Transfers casings from the mag to the gun when used.
+#define MAGAZINE 			4		//The magazine item itself goes inside the gun
 
 //Pistol Magwells
 #define MAG_WELL_GENERIC	0		//Guns without special magwells

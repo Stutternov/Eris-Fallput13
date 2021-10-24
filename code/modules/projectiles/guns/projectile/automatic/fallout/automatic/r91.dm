@@ -64,7 +64,6 @@
 	icon = 'icons/obj/guns/projectile/r91/folding.dmi'
 	icon_state = "r91"
 	item_state = "r91"
-
 	recoil_buildup = 1.8
 	damage_multiplier = 0.9 //Better control, worse damage
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)

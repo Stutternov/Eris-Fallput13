@@ -570,7 +570,7 @@
 /////////////// 5mm ///////////////
 
 /obj/item/ammo_magazine/rifle_5mm
-	name = "5.56 magazine"
+	name = "5mm magazine"
 	icon_state = "lrifle_l"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
@@ -584,12 +584,12 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/rifle_5mm/practice
-	name = "5.56 magazine (practice)"
+	name = "5mm magazine (practice)"
 	icon_state = "lrifle_p"
 	ammo_type = /obj/item/ammo_casing/lrifle/practice
 
 /obj/item/ammo_magazine/rifle_5mm/short
-	name = "5.56 magazine"
+	name = "5mm magazine"
 	icon_state = "lrifle_l"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
@@ -603,7 +603,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/rifle_5mm/short/practice
-	name = "5.56 magazine (practice)"
+	name = "5mm magazine (practice)"
 	icon_state = "lrifle_p"
 	ammo_type = /obj/item/ammo_casing/lrifle/practice
 
@@ -853,6 +853,37 @@
 	icon_state = "maxim_r"
 	ammo_type = /obj/item/ammo_casing/lrifle/rubber
 	ammo_color = "-r"
+
+/////////////// .50 Cal ///////////////
+
+/obj/item/ammo_magazine/50mg
+	name = ".50 MG magazine box"
+	icon_state = "lrifle_box"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	mag_well = MAG_WELL_BOX
+	caliber = CAL_LRIFLE
+	matter = list(MATERIAL_STEEL = 8)
+	ammo_type = /obj/item/ammo_casing/lrifle
+	max_ammo = 80
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/50mg/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/50mg/pk
+	name = "50 MG heavy munitions box"
+	icon_state = "pk_box"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	mag_well = MAG_WELL_BOX
+	caliber = CAL_LRIFLE
+	matter = list(MATERIAL_STEEL = 8)
+	ammo_type = /obj/item/ammo_casing/lrifle
+	max_ammo = 100
+	multiple_sprites = 1
+	w_class = ITEM_SIZE_NORMAL
+
 
 ///////// SPEEDLOADERS ///////////
 
