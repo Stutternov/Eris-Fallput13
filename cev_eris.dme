@@ -2419,7 +2419,6 @@
 #include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\bozar.dm"
 #include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\lmg.dm"
 #include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\M2A1.dm"
-#include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\machineguns.dm"
 #include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\r91.dm"
 #include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\rangemaster.dm"
 #include "code\modules\projectiles\guns\projectile\automatic\fallout\automatic\servicerifle.dm"
