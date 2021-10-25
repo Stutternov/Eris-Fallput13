@@ -1,10 +1,9 @@
-
 /datum/job/headkhan
 	title = "Head Khan"
 	flag = KHAN
 	department = DEPARTMENT_KHAN
-	head_position = 1
 	department_flag = KHAN
+	head_position = 1
 	faction = "The Great Khans"
 	total_positions = 1
 	spawn_positions = 1
