@@ -1,6 +1,6 @@
 // .22 LR SMG
 
-/obj/item/gun/projectile/automatic/smg22
+/obj/item/gun/projectile/automatic/smg
 	name = ".22 SMG \"American-180\""
 	desc = "A gun that looks like it is fresh out of one of those mobster movie holotapes! While it's relatively bulky for its caliber it makes the gun incredibly sturdy and comfortable to fire. \
 			Its fast fire rate, ability to lay down rounds in mass and accuracy made it a favorite pre-war among organized crime groups. Seems to be the case post-war too!"
@@ -30,9 +30,21 @@
 		BURST_5_ROUND,
 		)
 
+/obj/item/gun/projectile/automatic/smg/on_update_icon()
+	cut_overlays()
+	icon_state = "[initial(icon_state)][silenced ? "_s" : ""]"
+	if(ammo_magazine)
+		add_overlays("mag[silenced ? "_s" : ""][ammo_magazine.ammo_color]")
+	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
+		add_overlays("slide[silenced ? "_s" : ""]")
+
+/obj/item/gun/projectile/automatic/smg/Initialize()
+	. = ..()
+	update_icon()
+
 //9mm SMGs
 
-/obj/item/gun/projectile/automatic/uzi
+/obj/item/gun/projectile/automatic/smg/uzi
 	name = "Uzi SMG"
 	desc = "The Uzi is a relatively famous - or infamous firearm, depending on how one looks at it. \
 			It was known for its ability to be fired automatic with ease, gangsters back in the day even doing so one-handed! Reliable, quick firing - but inaccurate."
@@ -63,7 +75,7 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/gun/projectile/automatic/mp5
+/obj/item/gun/projectile/automatic/smg/mp5
 	name = "H&K \"MP5A\""
 	desc = "Before the Great War this gun was state of the art for many special forces units and police forces across the country. Its rarity is likely due to its price back in the day but it earns its keep. \
 			The sturdy collpasing stock allows for the weapon to go between a sub-machinegun to a near carbine, laying down low caliber but accurate fire. It may not put rounds quick down range like an Uzi but it's nothing to sneeze at."
@@ -94,7 +106,7 @@
 		)
 
 
-/obj/item/gun/projectile/automatic/ppsh
+/obj/item/gun/projectile/automatic/smg/ppsh
 	name = "PPSH \"Shpagin\""
 	desc = "A rare yet relatively well-known firearm from well before the Great War. The PPSH, also known as the 'Shpagin' based off of its name, served in the Soviet military for decades during its height. \
 			This firearm must have been pulled from a musuem at some point due to how well it has withstood the last 200 years, but that doesn't slow its rate of fire! There's no stopping this thing!"
@@ -125,7 +137,7 @@
 
 //10mm SMG
 
-/obj/item/gun/projectile/automatic/smg_10mm
+/obj/item/gun/projectile/automatic/smg/smg_10mm
 	name = "10mm SMG \"H&K MP9\""
 	desc = "Commonly just called the 10mm SMG, the H&K MP9 10mm SMG is a state of the art compact and hard-hitting SMG. Before the Great War these were widespread, sporting more stopping power than its predisessor. \
 			These sold like hotcakes prior to the war and still do. Careful holding it one-handed though, thing can blow your wrist apart!"
@@ -151,12 +163,12 @@
 
 	init_firemodes = list(
 		FULL_AUTO_400,
-		SEMI_AUTO_NO_DELAY,
+		SEMI_AUTO_NODELAY,
 		)
 
 //.45 ACP SMGs
 
-/obj/item/gun/projectile/automatic/greasegun
+/obj/item/gun/projectile/automatic/smg/greasegun
 	name = "M3 \"Grease-Gun\""
 	desc = "An amazing piece of engineering, the open-bolt firing M3 Grease-Gun is a simple gun from centuries back made simply of stamped metal and simple firing mechanisms. \
 			This thing, for an overglorified assembly of cheap metal, packs a punch to it! However it suffers inaccuracy and recoil issues, as well ast the fact the cocking mechanism.. requires you to use your finger to the bolt."
@@ -181,11 +193,11 @@
 	one_hand_penalty = 10 //Bigger round than a 9mm so extra penalty.
 
 	init_firemodes = list(
-		FULL_AUTO_400,
-		SEMI_AUTO_NO_DELAY,
+		FULL_AUTO_300,
+		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/gun/projectile/automatic/greasegun
+/obj/item/gun/projectile/automatic/smg/thompson
 	name = "Thompson SMG"
 	desc = "The Thompson goes by many names. The \"Chicago Typewriter\", the \"Trench Broom\" or simply the \"Tommy Gun\". None of these nicknames come from nothing as this gun is infamous in American history. \
 			It's heavy, it kicks like a bitch and it feels odd to carry.. but the damage it can deal in sustained fire is unmatched. Despite being centuries out of date this gun still manages to out preform even its new competators."
@@ -211,5 +223,5 @@
 
 	init_firemodes = list(
 		FULL_AUTO_600,
-		SEMI_AUTO_NO_DELAY,
+		SEMI_AUTO_NODELAY,
 		)

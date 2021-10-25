@@ -1,4 +1,4 @@
-/obj/item/gun/ballistic/automatic/rangemaster
+/obj/item/gun/projectile/automatic/rangemaster
 	name = "Colt .308 \"Rangemaster\""
 	desc = "The Colt .308 \"Rangemaster\" has been a staple in American hunting groups for a near century prior to the war. \
 			This specific rifle has been rechambered to 7.62."
@@ -31,7 +31,7 @@
 		)
 
 
-/obj/item/gun/ballistic/automatic/rangemaster/m14
+/obj/item/gun/projectile/automatic/rangemaster/m14
 	name = "M14 Battle Rifle"
 	desc = "The M14 Battle Rifle is an ancient staple of the United States Army back during the begining of the Red Scare three centuries back. \
 			Chambered in 7.62 this rifle packs a punch and sports burst fire capability. While feeling great to hold the thing really does kick back badly.."

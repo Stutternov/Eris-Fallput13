@@ -1,4 +1,4 @@
-/obj/item/gun/ballistic/automatic/service
+/obj/item/gun/projectile/automatic/service
 	name = "Service Rifle"
 	desc = "The Service Rifle is a staple rifle of the NCR and West Coaster's alike. Reliable, cheap, affordable and sporting a stock and handguard made of wood furnishing. \
 			Despite its post-war history as a reliable rifle it seems its origins have been lost to time. What can be certain is this has become a new American classic rifle. \
@@ -8,7 +8,7 @@
 	item_state = "service"
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
-	caliber = CAL_RIFLE
+	caliber = CAL_SRIFLE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_COVERT = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -31,7 +31,40 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/gun/ballistic/automatic/service/maxson
+/obj/item/weapon/gun/projectile/automatic/service/update_icon()
+	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if (ammo_magazine)
+		iconstring += "[ammo_magazine? "_mag[ammo_magazine.max_ammo]": ""]"
+
+	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
+		iconstring += "_slide"
+
+	if(wielded)
+		itemstring += "_doble"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
+
+/obj/item/weapon/gun/projectile/automatic/service/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/item/gun/projectile/automatic/service/carbine
+	name = "Scout Carbine"
+	desc = "A sawn down barrled version of the NCR's Service Rifle but with a scope. Whoever did this really wanted to make a compact rifle and a scope to accompany it. \
+			Why you'd do that? No one knows, but the NCR thought this would be a good and cheap marksman rifle. And, for its price, it's not half bad."
+	w_class = ITEM_SIZE_NORMAL
+	price_tag = 450
+	zoom_factor = 0.4
+	damage_multiplier = 1
+	penetration_multiplier = 1
+
+
+/obj/item/gun/projectile/automatic/service/maxson
 	name = "\"Maxson\" Rifle"
 	desc = "With the Brotherhood isignia built into this guns handguard it's not hard to guess who made this strange amalgimation of old salvaged and new precision machine parts. \
 			The gun is hard to describe. 'Generic', apart from his unique handguard and polymer would be the easiest way to describe it. \

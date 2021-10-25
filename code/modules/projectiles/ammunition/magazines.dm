@@ -143,8 +143,8 @@
 	ammo_color = "-p"
 	ammo_type = /obj/item/ammo_casing/pistol/practice
 
-/obj/item/ammo_magazine/magnum_45/hv
-	name = "45 ACP magazine (hollow-point)"
+/obj/item/ammo_magazine/pistol_45/hv
+	name = "45 ACP magazine (high-velocity)"
 	icon_state = "pistol_hv"
 	ammo_type = /obj/item/ammo_casing/pistol/hv
 
@@ -327,6 +327,11 @@
 	max_ammo = 180
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/cssmg/empty
+	icon_state = "maxim_l"
+	ammo_color = ""
+	initial_ammo = 0
+
 /obj/item/ammo_magazine/cssmg/rubber
 	icon_state = "maxim_l"
 	ammo_color = "-r"
@@ -484,48 +489,18 @@
 	ammo_color = "-hv"
 	ammo_type = /obj/item/ammo_casing/magnum/hv
 
+////////// .22 RIFLE ///////////
 
-///////////// .20 RIFLE /////////////
-
-/obj/item/ammo_magazine/srifle
-	name = "magazine (.20 Rifle)"
-	icon_state = "srifle_l"
-	origin_tech = list(TECH_COMBAT = 2)
+/obj/item/ammo_magazine/c10x24
+	name = ".22 LR box magazine"
+	icon_state = "10x24"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	caliber = CAL_SRIFLE
-	matter = list(MATERIAL_STEEL = 6)
-	ammo_type = /obj/item/ammo_casing/srifle
-	max_ammo = 25
+	caliber = CAL_22
+	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 1)
+	ammo_type = /obj/item/ammo_casing/clrifle
+	max_ammo = 99
 	multiple_sprites = 1
-
-/obj/item/ammo_magazine/srifle/empty
-	icon_state = "srifle"
-	matter = list(MATERIAL_STEEL = 3)
-	initial_ammo = 0
-
-/obj/item/ammo_magazine/srifle/practice
-	name = "magazine (.20 Rifle practice)"
-	icon_state = "srifle_p"
-	ammo_type = /obj/item/ammo_casing/srifle/practice
-
-/obj/item/ammo_magazine/srifle/hv
-	name = "magazine (.20 Rifle high-velocity)"
-	icon_state = "srifle_hv"
-	ammo_type = /obj/item/ammo_casing/srifle/hv
-
-/obj/item/ammo_magazine/srifle/rubber
-	name = "magazine (.20 Rifle rubber)"
-	icon_state = "srifle_r"
-	ammo_type = /obj/item/ammo_casing/srifle/rubber
-
-/obj/item/ammo_magazine/srifle/scrap
-	name = "magazine (old .20 Rifle)"
-	icon_state = "srifle_s"
-	ammo_type = /obj/item/ammo_casing/srifle/scrap
-	spawn_tags = SPAWN_AMMO_COMMON
-
-////////// .22 RIFLE ///////////
 
 /obj/item/ammo_magazine/ihclrifle
 	name = ".22 LR magazine"
@@ -567,6 +542,24 @@
 	ammo_type = /obj/item/ammo_casing/clrifle/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
+
+/////////////// 2mm ///////////////
+
+/obj/item/ammo_magazine/rifle_2mm
+	name = "2mm magazine"
+	icon_state = "lrifle_l"
+	mag_type = MAGAZINE
+	mag_well = MAG_WELL_RIFLE
+	caliber = CAL_MINI
+	matter = list(MATERIAL_STEEL = 5)
+	ammo_type = /obj/item/ammo_casing/lrifle
+	max_ammo = 20
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/rifle_5mm/empty
+	initial_ammo = 0
+
+
 /////////////// 5mm ///////////////
 
 /obj/item/ammo_magazine/rifle_5mm
@@ -607,9 +600,10 @@
 	icon_state = "lrifle_p"
 	ammo_type = /obj/item/ammo_casing/lrifle/practice
 
-/////////////// 5.56 ///////////////
 
-/obj/item/ammo_magazine/rifle
+///////////// 5.56 /////////////
+
+/obj/item/ammo_magazine/srifle
 	name = "5.56 magazine box"
 	icon_state = "lrifle_box"
 	origin_tech = list(TECH_COMBAT = 2)
@@ -621,10 +615,10 @@
 	max_ammo = 50
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/rifle/empty
+/obj/item/ammo_magazine/srifle/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/rifle/lmg
+/obj/item/ammo_magazine/srifle/lmg
 	name = "5.56 LMG munitions box"
 	icon_state = "pk_box"
 	origin_tech = list(TECH_COMBAT = 2)
@@ -637,7 +631,7 @@
 	multiple_sprites = 1
 	w_class = ITEM_SIZE_NORMAL
 
-/obj/item/ammo_magazine/ammobox/rifle/lmg/on_update_icon()
+/obj/item/ammo_magazine/ammobox/srifle/lmg/on_update_icon()
 	if (!stored_ammo.len)
 		icon_state = "pk_box-0"
 		return
@@ -651,10 +645,10 @@
 		number = round(percent, 25)
 	icon_state = "pk_box-[number]"
 
-/obj/item/ammo_magazine/rifle/pk/empty
+/obj/item/ammo_magazine/srifle/pk/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/rifle/short
+/obj/item/ammo_magazine/srifle/short
 	name = "5.56 magazine"
 	icon_state = "lrifle_l"
 	mag_type = MAGAZINE
@@ -665,26 +659,26 @@
 	max_ammo = 20
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/rifle/short/empty
+/obj/item/ammo_magazine/srifle/short/empty
 	icon_state = "lrifle"
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/rifle/short/practice
+/obj/item/ammo_magazine/srifle/short/practice
 	name = "5.56 magazine (practice)"
 	icon_state = "lrifle_p"
 	ammo_type = /obj/item/ammo_casing/lrifle/practice
 
-/obj/item/ammo_magazine/rifle/short/highvelocity
+/obj/item/ammo_magazine/srifle/short/highvelocity
 	name = "5.56 magazine (high-velocity)"
 	icon_state = "lrifle_hv"
 	ammo_type = /obj/item/ammo_casing/lrifle/hv
 
-/obj/item/ammo_magazine/rifle/short/rubber
+/obj/item/ammo_magazine/srifle/short/rubber
 	name = "5.56 magazine (rubber)"
 	icon_state = "lrifle_r"
 	ammo_type = /obj/item/ammo_casing/lrifle/rubber
 
-/obj/item/ammo_magazine/rifle
+/obj/item/ammo_magazine/srifle
 	name = "5.56 magazine"
 	icon_state = "lrifle_l"
 	mag_type = MAGAZINE
@@ -695,24 +689,30 @@
 	max_ammo = 30
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/rifle/empty
+/obj/item/ammo_magazine/srifle/empty
 	icon_state = "lrifle"
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/rifle/practice
+/obj/item/ammo_magazine/srifle/practice
 	name = "5.56 magazine (practice)"
 	icon_state = "lrifle_p"
 	ammo_type = /obj/item/ammo_casing/lrifle/practice
 
-/obj/item/ammo_magazine/rifle/highvelocity
+/obj/item/ammo_magazine/srifle/highvelocity
 	name = "5.56 magazine (high-velocity)"
 	icon_state = "lrifle_hv"
 	ammo_type = /obj/item/ammo_casing/lrifle/hv
 
-/obj/item/ammo_magazine/rifle/rubber
+/obj/item/ammo_magazine/srifle/rubber
 	name = "5.56 magazine (rubber)"
 	icon_state = "lrifle_r"
 	ammo_type = /obj/item/ammo_casing/lrifle/rubber
+
+/obj/item/ammo_magazine/srifle/scrap
+	name = "magazine (old .20 Rifle)"
+	icon_state = "srifle_s"
+	ammo_type = /obj/item/ammo_casing/srifle/scrap
+	spawn_tags = SPAWN_AMMO_COMMON
 
 
 /////////////// 7.62 ///////////////
@@ -807,14 +807,14 @@
 	ammo_type = /obj/item/ammo_casing/lrifle
 
 /obj/item/ammo_magazine/lrifle/short
-	name = "7.62 magazine"
+	name = "7.62 short magazine"
 	icon_state = "lrifle_l"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_LRIFLE
 	matter = list(MATERIAL_STEEL = 5)
 	ammo_type = /obj/item/ammo_casing/lrifle
-	max_ammo = 20
+	max_ammo = 10
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/lrifle/short/empty
@@ -856,7 +856,7 @@
 
 /////////////// .50 Cal ///////////////
 
-/obj/item/ammo_magazine/50mg
+/obj/item/ammo_magazine/bmg
 	name = ".50 MG magazine box"
 	icon_state = "lrifle_box"
 	origin_tech = list(TECH_COMBAT = 2)
@@ -868,10 +868,11 @@
 	max_ammo = 80
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/50mg/empty
+
+/obj/item/ammo_magazine/bmg/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/50mg/pk
+/obj/item/ammo_magazine/bmg/pk
 	name = "50 MG heavy munitions box"
 	icon_state = "pk_box"
 	origin_tech = list(TECH_COMBAT = 2)

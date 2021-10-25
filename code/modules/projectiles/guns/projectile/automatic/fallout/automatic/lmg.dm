@@ -1,4 +1,4 @@
-/obj/item/gun/ballistic/automatic/r84
+/obj/item/gun/projectile/automatic/r84
 	name = "R84 LMG"
 	desc = "The R84 LMG is a staple automatic weapon of the NCR. This 5.56 chambered light machine gun can put rounds down range like no other! \
 			A sister design of the Bozar, the R84 acts as the counter to the Bozar. Less accuracy but ten times the rounds put down range!"
@@ -7,7 +7,7 @@
 	item_state = "r84"
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
-	caliber = CAL_RIFLE
+	caliber = CAL_SRIFLE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_COVERT = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -27,12 +27,34 @@
 	gun_tags = list(GUN_SILENCABLE)
 
 	init_firemodes = list(
-		FULL_AUTO_600
+		FULL_AUTO_600,
 		BURST_8_ROUND,
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/gun/ballistic/automatic/lsw
+/obj/item/weapon/gun/projectile/automatic/r84/update_icon()
+	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if (ammo_magazine)
+		iconstring += "[ammo_magazine? "_mag[ammo_magazine.max_ammo]": ""]"
+
+	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
+		iconstring += "_slide"
+
+	if(wielded)
+		itemstring += "_doble"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
+
+/obj/item/weapon/gun/projectile/automatic/r84/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/item/gun/projectile/automatic/r84/lsw
 	name = "Light Support Weapon"
 	desc = "The Light Support Weapon, also known simply as the \"LSW\", is a weapon of unkown origings. This bullpup LMG looks design wise amazing - yet also incredibly impracticle. \
 			The best way one could describe this is a Bozar-level insperation but shoved into an LMG. Sporting a scope and clearly meant for range but also a high rate of fire yet with lower capacity."
@@ -41,7 +63,7 @@
 	item_state = "lsw"
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
-	caliber = CAL_RIFLE
+	caliber = CAL_SRIFLE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_COVERT = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -61,11 +83,11 @@
 	gun_tags = list(GUN_SILENCABLE)
 
 	init_firemodes = list(
-		FULL_AUTO_600
+		FULL_AUTO_600,
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/gun/ballistic/automatic/bar
+/obj/item/gun/projectile/automatic/r84/bar
 	name = "Browning Automatic Rifle"
 	desc = "The Browning Automatic Rifle, also known simply as the \"BAR 1918\", is a weapon that has been around for over 300 years; rusting away in National Guard stockpiles for decades before the war. \
 			This beast of a weapon puts 7.62 rounds down range in high quanities. Though it is held back by its limited mag capacity and recoil it allows versetile use as both an LMG or a regular serviceman rifle."

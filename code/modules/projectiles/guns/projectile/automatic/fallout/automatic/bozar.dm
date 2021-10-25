@@ -47,6 +47,6 @@
 	icon_state = iconstring
 	set_item_state(itemstring)
 
-/obj/item/weapon/gun/projectile/automatic/nordwind/Initialize()
+/obj/item/weapon/gun/projectile/automatic/bozar/Initialize()
 	. = ..()
 	update_icon()

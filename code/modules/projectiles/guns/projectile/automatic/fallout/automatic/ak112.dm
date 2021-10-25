@@ -29,7 +29,7 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/weapon/gun/projectile/automatic/ak112/update_icon()
+/obj/item/gun/projectile/automatic/ak112/on_update_icon()
 	..()
 
 	var/iconstring = initial(icon_state)
@@ -37,15 +37,14 @@
 
 	if (ammo_magazine)
 		iconstring += "[ammo_magazine? "_mag[ammo_magazine.max_ammo]": ""]"
-
-	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
-		iconstring += "_slide"
+		itemstring += "_full"
 
 	if(wielded)
 		itemstring += "_doble"
 
 	icon_state = iconstring
 	set_item_state(itemstring)
+
 
 /obj/item/weapon/gun/projectile/automatic/ak112/Initialize()
 	. = ..()

@@ -3,7 +3,7 @@
 	desc = "This gun can instill fear into any living soul that sees a man holding it. And for good reason. \
 			This gun can lay down surppressive fire down range like no other. .50 MG, a decent rate of fire and the ability to tear a man in two. \
 			No wonder why it's nickname is the almighty \"John Moses Browning\"."
-	icon = 'icons/obj/guns/projectile/l6.dmi'
+	icon = 'icons/obj/guns/projectile/m2a1.dmi'
 	var/icon_base = "m2a1"
 	icon_state = "m2a1closed-empty"
 	item_state = "m2a1closedmag"
@@ -15,7 +15,7 @@
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_BOX
-	magazine_type = /obj/item/ammo_magazine/50mg
+	magazine_type = /obj/item/ammo_magazine/bmg
 	tac_reloads = FALSE
 	matter = list(MATERIAL_PLASTEEL = 40, MATERIAL_PLASTIC = 15, MATERIAL_WOOD = 5)
 	price_tag = 2000
