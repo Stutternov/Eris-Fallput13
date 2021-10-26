@@ -32,7 +32,7 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/weapon/gun/projectile/automatic/r84/update_icon()
+/obj/item/gun/projectile/automatic/r84/update_icon()
 	..()
 
 	var/iconstring = initial(icon_state)

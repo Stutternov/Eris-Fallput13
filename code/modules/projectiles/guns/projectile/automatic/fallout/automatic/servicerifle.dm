@@ -31,7 +31,7 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/weapon/gun/projectile/automatic/service/update_icon()
+/obj/item/gun/projectile/automatic/service/on_update_icon()
 	..()
 
 	var/iconstring = initial(icon_state)
@@ -57,7 +57,7 @@
 	name = "Scout Carbine"
 	desc = "A sawn down barrled version of the NCR's Service Rifle but with a scope. Whoever did this really wanted to make a compact rifle and a scope to accompany it. \
 			Why you'd do that? No one knows, but the NCR thought this would be a good and cheap marksman rifle. And, for its price, it's not half bad."
-	icon = 'icons/obj/guns/projectile/scountcarbine.dmi'
+	icon = 'icons/obj/guns/projectile/scoutcarbine.dmi'
 	icon_state = "scout"
 	item_state = "scout"
 	w_class = ITEM_SIZE_NORMAL

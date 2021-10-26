@@ -32,7 +32,7 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/gun/ballistic/automatic/assaultcarbine/marksman
+/obj/item/gun/projectile/automatic/assaultcarbine/marksman
 	name = "\"Colt\" Marksman Rifle"
 	desc = "The Colt Marksman Rifle, also branded as the \"All American\" Rifle, is a modified civilian version of the Colt Assault Carbine made for home defense, hunting and self defense. \
 			This staple rifle was known as one of the best civilian grade weapons ever made prior to the Great War. It's 5.56 magazines allow it a manageable recoil atop of its high accuracy. \
@@ -41,7 +41,7 @@
 	icon_state = "marksman"
 	item_state = "marksman"
 	caliber = CAL_SRIFLE
-	magazine_type = /obj/item/ammo_magazine/rifle
+	magazine_type = /obj/item/ammo_magazine/srifle
 	price_tag = 900
 	zoom_factor = 0.4
 	damage_multiplier = 1.4

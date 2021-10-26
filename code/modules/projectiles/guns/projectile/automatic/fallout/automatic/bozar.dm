@@ -32,7 +32,7 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/weapon/gun/projectile/automatic/bozar/update_icon()
+/obj/item/gun/projectile/automatic/bozar/on_update_icon()
 	..()
 
 	var/iconstring = initial(icon_state)
@@ -40,6 +40,7 @@
 
 	if (ammo_magazine)
 		iconstring += "[ammo_magazine? "_mag[ammo_magazine.max_ammo]": ""]"
+		itemstring += "_full"
 
 	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
 		iconstring += "_slide"
