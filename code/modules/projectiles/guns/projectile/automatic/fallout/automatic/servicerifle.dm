@@ -57,21 +57,11 @@
 	name = "Scout Carbine"
 	desc = "A sawn down barrled version of the NCR's Service Rifle but with a scope. Whoever did this really wanted to make a compact rifle and a scope to accompany it. \
 			Why you'd do that? No one knows, but the NCR thought this would be a good and cheap marksman rifle. And, for its price, it's not half bad."
+	icon = 'icons/obj/guns/projectile/scountcarbine.dmi'
+	icon_state = "scout"
+	item_state = "scout"
 	w_class = ITEM_SIZE_NORMAL
 	price_tag = 450
 	zoom_factor = 0.4
 	damage_multiplier = 1
 	penetration_multiplier = 1
-
-
-/obj/item/gun/projectile/automatic/service/maxson
-	name = "\"Maxson\" Rifle"
-	desc = "With the Brotherhood isignia built into this guns handguard it's not hard to guess who made this strange amalgimation of old salvaged and new precision machine parts. \
-			The gun is hard to describe. 'Generic', apart from his unique handguard and polymer would be the easiest way to describe it. \
-			It appears to have copied parts of both the Assault Carbine and Service Rifle. Inlcuding the taking only 20 rounds part.. but the elders argue it's 'a feature'.."
-	icon = 'icons/obj/guns/projectile/servicerifle.dmi'
-	icon_state = "service"
-	item_state = "service"
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
-	recoil_buildup = 1.6
-	penetration_multiplier = 1.0

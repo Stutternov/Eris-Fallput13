@@ -50,3 +50,19 @@
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY,
 		)
+
+/obj/item/gun/projectile/automatic/assaultcarbine/maxson
+	name = "\"Maxson\" Rifle"
+	desc = "With the Brotherhood isignia built into this gun's handguard it's not hard to guess who made this strange amalgimation of old salvaged and new precision machine parts. \
+			The gun is hard to describe. 'Generic', apart from his unique handguard and polymer would be the easiest way to describe it. \
+			It appears to have copied parts of both the Assault Carbine and Service Rifle. Including its caliber being a 5mm yet.. also including its lack of select-fire capacility."
+	icon_state = "maxson"
+	item_state = "maxson"
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
+	recoil_buildup = 1.6
+	damage_multiplier = 1.2
+	penetration_multiplier = 1.0
+
+	init_firemodes = list(
+		SEMI_AUTO_NODELAY,
+		)
