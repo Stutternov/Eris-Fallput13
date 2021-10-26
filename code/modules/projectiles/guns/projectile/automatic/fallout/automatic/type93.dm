@@ -28,7 +28,7 @@
 		SEMI_AUTO_NODELAY,
 		)
 
-/obj/item/weapon/gun/projectile/automatic/type93/update_icon()
+/obj/item/gun/projectile/automatic/type93/on_update_icon()
 	..()
 
 	var/iconstring = initial(icon_state)

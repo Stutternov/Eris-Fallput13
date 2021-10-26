@@ -10,7 +10,7 @@
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	magazine_type = /obj/item/ammo_magazine/rifle
+	magazine_type = /obj/item/ammo_magazine/lrifle
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 1200
 	fire_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'

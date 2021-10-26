@@ -4,7 +4,7 @@
 	name = ".22 SMG \"American-180\""
 	desc = "A gun that looks like it is fresh out of one of those mobster movie holotapes! While it's relatively bulky for its caliber it makes the gun incredibly sturdy and comfortable to fire. \
 			Its fast fire rate, ability to lay down rounds in mass and accuracy made it a favorite pre-war among organized crime groups. Seems to be the case post-war too!"
-	icon = 'icons/obj/guns/projectile/uzi.dmi'
+	icon = 'icons/obj/guns/projectile/smg22.dmi'
 	icon_state = "uzi"
 	item_state = "uzi"
 	w_class = ITEM_SIZE_BULKY
@@ -81,6 +81,7 @@
 			The sturdy collpasing stock allows for the weapon to go between a sub-machinegun to a near carbine, laying down low caliber but accurate fire. It may not put rounds quick down range like an Uzi but it's nothing to sneeze at."
 	icon_state = "mp5"
 	item_state = "mp5"
+	icon = 'icons/obj/guns/projectile/mp5.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_PAINFUL
 	caliber = CAL_PISTOL
@@ -110,8 +111,9 @@
 	name = "PPSH \"Shpagin\""
 	desc = "A rare yet relatively well-known firearm from well before the Great War. The PPSH, also known as the 'Shpagin' based off of its name, served in the Soviet military for decades during its height. \
 			This firearm must have been pulled from a musuem at some point due to how well it has withstood the last 200 years, but that doesn't slow its rate of fire! There's no stopping this thing!"
-	icon_state = "uzi"
-	item_state = "uzi"
+	icon = 'icons/obj/guns/projectile/ppsh.dmi'
+	icon_state = "ppsh"
+	item_state = "thompson"
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
 	caliber = CAL_PISTOL
@@ -141,6 +143,7 @@
 	name = "10mm SMG \"H&K MP9\""
 	desc = "Commonly just called the 10mm SMG, the H&K MP9 10mm SMG is a state of the art compact and hard-hitting SMG. Before the Great War these were widespread, sporting more stopping power than its predisessor. \
 			These sold like hotcakes prior to the war and still do. Careful holding it one-handed though, thing can blow your wrist apart!"
+	icon = 'icons/obj/guns/projectile/smg10mm.dmi'
 	icon_state = "smg10mm"
 	item_state = "smg10mm"
 	w_class = ITEM_SIZE_NORMAL
@@ -172,6 +175,7 @@
 	name = "M3 \"Grease-Gun\""
 	desc = "An amazing piece of engineering, the open-bolt firing M3 Grease-Gun is a simple gun from centuries back made simply of stamped metal and simple firing mechanisms. \
 			This thing, for an overglorified assembly of cheap metal, packs a punch to it! However it suffers inaccuracy and recoil issues, as well ast the fact the cocking mechanism.. requires you to use your finger to the bolt."
+	icon = 'icons/obj/guns/projectile/greasegun.dmi'
 	icon_state = "greasegun"
 	item_state = "greasegun"
 	w_class = ITEM_SIZE_NORMAL
@@ -201,6 +205,7 @@
 	name = "Thompson SMG"
 	desc = "The Thompson goes by many names. The \"Chicago Typewriter\", the \"Trench Broom\" or simply the \"Tommy Gun\". None of these nicknames come from nothing as this gun is infamous in American history. \
 			It's heavy, it kicks like a bitch and it feels odd to carry.. but the damage it can deal in sustained fire is unmatched. Despite being centuries out of date this gun still manages to out preform even its new competators."
+	icon = 'icons/obj/guns/projectile/thompson.dmi'
 	icon_state = "tommygun"
 	item_state = "tommygun"
 	w_class = ITEM_SIZE_BULKY

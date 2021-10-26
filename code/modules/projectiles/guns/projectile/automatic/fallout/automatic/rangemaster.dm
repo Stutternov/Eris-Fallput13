@@ -36,8 +36,8 @@
 	desc = "The M14 Battle Rifle is an ancient staple of the United States Army back during the begining of the Red Scare three centuries back. \
 			Chambered in 7.62 this rifle packs a punch and sports burst fire capability. While feeling great to hold the thing really does kick back badly.."
 	icon = 'icons/obj/guns/projectile/rangemaster.dmi'
-	icon_state = "rangemaster"
-	item_state = "rangemaster"
+	icon_state = "m14"
+	item_state = "m14"
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
 	caliber = CAL_LRIFLE
