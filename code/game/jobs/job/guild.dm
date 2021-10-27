@@ -1,3 +1,4 @@
+/*
 //Cargo
 /datum/job/merchant
 	title = "Guild Merchant"
@@ -219,3 +220,4 @@ Character Expectations:<br>\
 	name = "Guild Artist"
 	icon_state = "player-grey"
 	join_tag = /datum/job/artist
+*/
