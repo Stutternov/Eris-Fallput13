@@ -49,3 +49,6 @@
 #define PERK_CODESPEAK /datum/perk/codespeak
 #define PERK_TECHNOMANCER /datum/perk/inspiration
 #define PERK_CLUB /datum/perk/job/club
+
+//Death perk
+#define PERK_REZ_SICKNESS /datum/perk/rezsickness
