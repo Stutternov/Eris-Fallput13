@@ -1,8 +1,9 @@
-
 /datum/job/elder
 	title = "Elder"
-	department_flag = DEPARTMENT_BOS
+	flag = ELDER
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	selection_color = "#161313"
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 0
@@ -14,11 +15,11 @@
 	ideal_character_age = 65
 
 	description = "You are a elder of the Brotherhood of Steel. <br>\
-One of the main leaders of the Brotherhood of Steel's local chapters, and an esteemed member of it at that..<br>\
+	One of the main leaders of the Brotherhood of Steel's local chapters, and an esteemed member of it at that..<br>\
 
-You are the ultimate authority within the local chapter of the Brotherhood, your word is viewed as law by many of the subordinates.<br>\
-Cast out from the West or fleeing from the East your chapter is all that is left to this word; for no longer is the Brotherhood unified - you MUST keep your chapter together at nearly any cost.<br>\
-Remember that all your subordinates, all the paladins, knight and scribes under you look up to you. They are your brothers, your little brothers. They are family in all but direct blood. And even then - some are.."
+	You are the ultimate authority within the local chapter of the Brotherhood, your word is viewed as law by many of the subordinates.<br>\
+	Cast out from the West or fleeing from the East your chapter is all that is left to this word; for no longer is the Brotherhood unified - you MUST keep your chapter together at nearly any cost.<br>\
+	Remember that all your subordinates, all the paladins, knight and scribes under you look up to you. They are your brothers, your little brothers. They are family in all but direct blood. And even then - some are.."
 
 	loyalties = "Your first loyalty is to the Brotherhood, its goals and its Codex. Without these the world is lost to darkness yet again.."
 
@@ -38,8 +39,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/headpaladin
 	title = "Head Paladin"
-	department_flag = DEPARTMENT_BOS
+	flag = HEADPALADIN
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 1
@@ -63,8 +67,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/headscribe
 	title = "Head Scribe"
-	department_flag = DEPARTMENT_BOS
+	flag = HEADSCRIBE
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 1
@@ -88,8 +95,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/knightcaptain
 	title = "Knight Captain"
-	department_flag = DEPARTMENT_BOS
+	flag = KNIGHTCAPTAIN
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 1
@@ -114,8 +124,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/seniorpaladin
 	title = "Senior Paladin"
-	department_flag = DEPARTMENT_BOS
+	flag = SENIORPALADIN
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the head paladin"
@@ -138,8 +151,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/seniorscribe
 	title = "Senior Scribe"
-	department_flag = DEPARTMENT_BOS
+	flag = SENIORSCRIBE
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the head scribe"
@@ -162,8 +178,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/seniorknight
 	title = "Senior Knight"
-	department_flag = DEPARTMENT_BOS
+	flag = SENIORKNIGHT
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the head knight and, depending on the situation, the paladin caste"
@@ -186,8 +205,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/paladin
 	title = "Paladin"
-	department_flag = DEPARTMENT_BOS
+	flag = PALADIN
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the senior paladin and head paladin"
@@ -210,8 +232,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/scribe
 	title = "Scribe"
-	department_flag = DEPARTMENT_BOS
+	flag = SCRIBE
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "senior scribes and head scribes"
@@ -233,8 +258,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/knight
 	title = "Knight"
-	department_flag = DEPARTMENT_BOS
+	flag = KNIGHT
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "senior knights, head knights and, depending on the situation, the paladin caste"
@@ -256,8 +284,11 @@ Remember that all your subordinates, all the paladins, knight and scribes under 
 
 /datum/job/initiate
 	title = "Initiate"
-	department_flag = DEPARTMENT_BOS
+	flag = INITIATE
 	department = DEPARTMENT_BOS
+	department_flag = BOS
+	faction = "CEV Eris"
+	selection_color = "#161313"	
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "anyone within your aspiring caste"
