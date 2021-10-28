@@ -52,3 +52,8 @@
 
 //Death perk
 #define PERK_REZ_SICKNESS /datum/perk/rezsickness
+
+//Medical Skills
+#define PERK_MEDICAL_EXPERT /datum/perk/medicalexpertise
+#define PERK_SURGICAL_MASTER /datum/perk/surgical_master
+#define PERK_ADVANCED_MEDICAL /datum/perk/advanced_medical

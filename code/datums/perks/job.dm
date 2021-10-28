@@ -59,6 +59,14 @@
 		holder.metabolism_effects.nsa_threshold_base -= 10
 	..()
 
+/datum/perk/medicalexpertise
+	name = "Medical Expertise"
+	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right ammount of them."
+
+/datum/perk/advanced_medical
+	name = "Advanced Surgical Techniques"
+	desc = "Your surgical training and experience have tempered your special techniques for treating patients, enabling you to make more effective and efficient use of your resources when reconstituting their bodies."
+
 /datum/perk/selfmedicated/chemist
 	name = "Chemical-junkie"
 	desc = "You know what the atoms around you react to and in what way they do. You are used to making organic substitutes and pumping them into yourself in the name of science! \
@@ -76,6 +84,18 @@
 		holder.metabolism_effects.nsa_threshold_base /= 1.25
 	..()
 
+/datum/perk/klutz
+	name = "Klutz"
+	desc = "You find a lot of tasks a little beyond your ability to perform, but being accident prone has at least made you used to getting hurt."
+	//icon_state = "selfmedicated" // https://game-icons.net/1x1/lorc/overdose.html
+
+/datum/perk/klutz/assign(mob/living/carbon/human/H)
+	..()
+	holder.mutations.Add(CLUMSY)
+
+/datum/perk/klutz/remove()
+	holder.mutations.Remove(CLUMSY)
+	..()
 
 /datum/perk/vagabond
 	name = "Vagabond"
@@ -324,6 +344,19 @@
 	gain_text = "Your body aches from the pain of returning from death, you better find a chair or bed to rest in so you can heal properly."
 	lose_text = "You finally feel like you recovered from the ravages of your body."
 	var/initial_time
+
+/datum/perk/rezsickness/activate()
+	var/mob/living/carbon/human/user = usr
+	if(!istype(user))
+		return ..()
+	if(world.time < cooldown_time)
+		to_chat(usr, SPAN_NOTICE("Your chemical injector is still refilling, you'll need to wait longer."))
+		return FALSE
+	cooldown_time = world.time + 15 MINUTES
+	user.visible_message("[user] begins twitching and breathing much quicker!", "You feel your heart rate increasing rapidly as everything seems to speed up!", "You hear someone breathing rapidly...")
+	log_and_message_admins("used their [src] perk.")
+	user.reagents.add_reagent("hyperzine", 5)
+	return ..()
 
 /datum/perk/rezsickness/assign(mob/living/carbon/human/H)
 	..()
