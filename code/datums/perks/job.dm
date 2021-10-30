@@ -40,6 +40,9 @@
 	holder.sanity.insight_rest_gain_multiplier += old_insight_rest_gain_multiplier
 	..()
 
+/datum/perk/advanced_medical
+	name = "Advanced Surgical Techniques"
+	desc = "Your surgical training and experience have tempered your special techniques for treating patients, enabling you to make more effective and efficient use of your resources when reconstituting their bodies."
 
 /datum/perk/selfmedicated
 	name = "Self-medicated"
@@ -59,14 +62,6 @@
 		holder.metabolism_effects.nsa_threshold_base -= 10
 	..()
 
-/datum/perk/medicalexpertise
-	name = "Medical Expertise"
-	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right ammount of them."
-
-/datum/perk/advanced_medical
-	name = "Advanced Surgical Techniques"
-	desc = "Your surgical training and experience have tempered your special techniques for treating patients, enabling you to make more effective and efficient use of your resources when reconstituting their bodies."
-
 /datum/perk/selfmedicated/chemist
 	name = "Chemical-junkie"
 	desc = "You know what the atoms around you react to and in what way they do. You are used to making organic substitutes and pumping them into yourself in the name of science! \
@@ -82,19 +77,6 @@
 /datum/perk/selfmedicated/chemist/remove()
 	if(holder)
 		holder.metabolism_effects.nsa_threshold_base /= 1.25
-	..()
-
-/datum/perk/klutz
-	name = "Klutz"
-	desc = "You find a lot of tasks a little beyond your ability to perform, but being accident prone has at least made you used to getting hurt."
-	//icon_state = "selfmedicated" // https://game-icons.net/1x1/lorc/overdose.html
-
-/datum/perk/klutz/assign(mob/living/carbon/human/H)
-	..()
-	holder.mutations.Add(CLUMSY)
-
-/datum/perk/klutz/remove()
-	holder.mutations.Remove(CLUMSY)
 	..()
 
 /datum/perk/vagabond
@@ -113,80 +95,10 @@
 		holder.sanity.view_damage_threshold -= 20
 	..()
 
-/datum/perk/merchant
-	name = "Merchant"
-	desc = "Money is what matters for you, and it's so powerful it lets you improve your skills. \
-			This perk lets you use money for leveling up. The credits need to be in your backpack."
-	icon_state = "merchant" // https://game-icons.net/1x1/lorc/cash.html and https://game-icons.net/1x1/delapouite/graduate-cap.html slapped on https://game-icons.net/1x1/lorc/trade.html
-
-/datum/perk/merchant/assign(mob/living/carbon/human/H)
-	..()
-	if(holder)
-		holder.sanity.valid_inspirations += /obj/item/spacecash/bundle
-
-/datum/perk/merchant/remove()
-	if(holder)
-		holder.sanity.valid_inspirations -= /obj/item/spacecash/bundle
-	..()
-
-#define CHOICE_LANG "language" // Random language chosen from a pool
-#define CHOICE_TCONTRACT "tcontract" // Traitor contract
-#define CHOICE_STASHPAPER "stashpaper" //stash location paper
-#define CHOICE_RAREOBJ "rareobj" // Rare loot object
-
-// ALERT: This perk has no removal method. Mostly because 3 out of 4 choices give knowledge to the player in the form of text, that would be pointless to remove.
-/datum/perk/deep_connection
-	name = "Deep connection"
-	desc = "With the help of your numerous trustworthy contacts, you manage to collect some useful information. \
-			Provides you with 1 of 4 boons: Language, Traitor Contract, a stash location or a special item in a box."
-	icon_state = "deepconnection" // https://game-icons.net/1x1/quoting/card-pickup.html
-
-/datum/perk/deep_connection/assign(mob/living/carbon/human/H)
-	..()
-	if(!holder)
-		return
-	var/list/choices = list(CHOICE_RAREOBJ)
-	if(GLOB.various_antag_contracts.len)
-		choices += CHOICE_TCONTRACT
-	var/datum/stash/stash = pick_n_take_stash_datum()
-	if(stash)
-		stash.select_location()
-		if(stash.stash_location)
-			choices += CHOICE_STASHPAPER
-	// Let's see if an additional language is feasible. If the user has them all already somehow, we aren't gonna choose this.
-	var/list/valid_languages = list(LANGUAGE_CYRILLIC, LANGUAGE_SERBIAN, LANGUAGE_GERMAN, LANGUAGE_NEOHONGO, LANGUAGE_LATIN) // Not static, because we're gonna remove languages already known by the user
-	for(var/l in valid_languages)
-		var/datum/language/L = all_languages[l]
-		if(L in holder.languages)
-			valid_languages -= l
-	if(valid_languages.len)
-		choices += CHOICE_LANG
-	// Let's pick a random choice
-	switch(pick(choices))
-		if(CHOICE_LANG)
-			var/language = pick(valid_languages)
-			holder.add_language(language)
-			desc += " In particular, you happen to know [language]."
-		if(CHOICE_TCONTRACT)
-			var/datum/antag_contract/A = pick(GLOB.various_antag_contracts)
-			desc += " You feel like you remembered something important."
-			holder.mind.store_memory("Thanks to your connections, you were tipped off about some suspicious individuals on the ship. In particular, you were told that they have a contract: " + A.name + ": " + A.desc)
-		if(CHOICE_STASHPAPER)
-			desc += " You have a special note in your storage."
-			stash.spawn_stash()
-			var/obj/item/paper/stash_note = stash.spawn_note()
-			holder.equip_to_storage_or_drop(stash_note)
-		if(CHOICE_RAREOBJ)
-			desc += " You managed to smuggle a rare item aboard."
-			var/obj/O = pickweight(RANDOM_RARE_ITEM - /obj/item/stash_spawner)
-			var/obj/item/storage/box/B = new
-			new O(B) // Spawn the random spawner in the box, so that the resulting random item will be within the box
-			holder.equip_to_storage_or_drop(B)
-
-#undef CHOICE_LANG
-#undef CHOICE_TCONTRACT
-#undef CHOICE_STASHPAPER
-#undef CHOICE_RAREOBJ
+/datum/perk/market_prof
+	name = "Market Professional"
+	desc = "Just by looking at the item you can know how much it cost."
+	icon_state = "market_prof"
 
 /datum/perk/sanityboost
 	name = "True Faith"
@@ -234,23 +146,6 @@
 	desc = "You know how to handle even strongest alcohol in the universe."
 	icon_state = "celebration" // https://game-icons.net/1x1/delapouite/glass-celebration.html
 
-/datum/perk/neat
-	name = "Neat"
-	desc = "You're used to see blood and filth in all its forms. Your motto: a clean ship is the first step to enlightenment. \
-			This perk reduces the total sanity damage you can take from what is happening around you. \
-			You can regain sanity by cleaning."
-	icon_state = "neat" // https://game-icons.net/1x1/delapouite/broom.html
-
-/datum/perk/neat/assign(mob/living/carbon/human/H)
-	..()
-	if(holder)
-		holder.sanity.view_damage_threshold += 20
-
-/datum/perk/neat/remove()
-	if(holder)
-		holder.sanity.view_damage_threshold -= 20
-	..()
-
 /datum/perk/greenthumb
 	name = "Green Thumb"
 	desc = "After growing plants for years you have become a botanical expert. You can get all information about plants, from stats \
@@ -263,80 +158,20 @@
 	..()
 	virtual_scanner.is_virtual = TRUE
 
-/datum/perk/job/club
-	name = "Raising the bar"
-	desc = "You know how to mix drinks and change lives. People near you recover sanity."
-	icon_state = "inspiration"
+/datum/perk/job/rally
+	name = "Rallying the Troops"
+	desc = "Your presence instills confidence, order and, most importantly, sanity to your underlings. People near you recover sanity."
+	icon_state = "rally"
 
-/datum/perk/job/club/assign(mob/living/carbon/human/H)
+/datum/perk/job/rally/assign(mob/living/carbon/human/H)
 	..()
 	if(holder)
 		holder.sanity_damage -= 2
 
-/datum/perk/job/club/remove()
+/datum/perk/job/rally/remove()
 	if(holder)
 		holder.sanity_damage += 2
 	..()
-
-/datum/perk/channeling
-	name = "Channeling"
-	desc = "You know how to channel spiritual energy during rituals. You gain additional skill points \
-			during group rituals and have an increased regeneration of cruciform energy."
-	icon_state = "channeling"
-
-/datum/perk/codespeak
-	name = "Codespeak"
-	desc = "You know Ironhammer PMC's code language, adapted to use aboard of CEV Eris."
-	icon_state = "codespeak" // https://game-icons.net/1x1/delapouite/police-officer-head.html
-	var/list/codespeak_procs = list(
-		/mob/living/carbon/human/proc/codespeak_help,
-		/mob/living/carbon/human/proc/codespeak_backup,
-		/mob/living/carbon/human/proc/codespeak_clear,
-		/mob/living/carbon/human/proc/codespeak_romch,
-		/mob/living/carbon/human/proc/codespeak_bigromch,
-		/mob/living/carbon/human/proc/codespeak_murderhobo,
-		/mob/living/carbon/human/proc/codespeak_serb,
-		/mob/living/carbon/human/proc/codespeak_commie,
-		/mob/living/carbon/human/proc/codespeak_carrion,
-		/mob/living/carbon/human/proc/codespeak_mutant,
-		/mob/living/carbon/human/proc/codespeak_dead_crew,
-		/mob/living/carbon/human/proc/codespeak_wounded_crew,
-		/mob/living/carbon/human/proc/codespeak_dead_oper,
-		/mob/living/carbon/human/proc/codespeak_wounded_oper,
-		/mob/living/carbon/human/proc/codespeak_ban,
-		/mob/living/carbon/human/proc/codespeak_criminal,
-		/mob/living/carbon/human/proc/codespeak_status,
-		/mob/living/carbon/human/proc/codespeak_shutup,
-		/mob/living/carbon/human/proc/codespeak_understood,
-		/mob/living/carbon/human/proc/codespeak_yes,
-		/mob/living/carbon/human/proc/codespeak_no,
-		/mob/living/carbon/human/proc/codespeak_what,
-		/mob/living/carbon/human/proc/codespeak_busted,
-		/mob/living/carbon/human/proc/codespeak_jailbreak,
-		/mob/living/carbon/human/proc/codespeak_understood_local,
-		/mob/living/carbon/human/proc/codespeak_yes_local,
-		/mob/living/carbon/human/proc/codespeak_no_local,
-		/mob/living/carbon/human/proc/codespeak_engage_local,
-		/mob/living/carbon/human/proc/codespeak_hold_local,
-		/mob/living/carbon/human/proc/codespeak_go_local,
-		/mob/living/carbon/human/proc/codespeak_stop_local,
-		/mob/living/carbon/human/proc/codespeak_idiot_local,
-		/mob/living/carbon/human/proc/codespeak_warcrime_yes_local,
-		/mob/living/carbon/human/proc/codespeak_warcrime_no_local,
-		/mob/living/carbon/human/proc/codespeak_run_local
-		)
-
-/datum/perk/codespeak/assign(mob/living/carbon/human/H)
-	..()
-	if(holder)
-		holder.verbs += codespeak_procs
-
-
-/datum/perk/codespeak/remove()
-	if(holder)
-		holder.verbs -= codespeak_procs
-	..()
-
 
 /datum/perk/rezsickness
 	name = "Revival Sickness"
@@ -441,3 +276,100 @@
 		return
 	if(holder.buckled)
 		cooldown_time -= 2 SECONDS
+
+
+//Da Graveyard
+//Basically stuff that should be either used at some point or removed. Not my focus to do so, so I'm leaving it here. - Rebel0
+
+/datum/perk/channeling
+	name = "Channeling"
+	desc = "You know how to channel spiritual energy during rituals. You gain additional skill points \
+			during group rituals and have an increased regeneration of cruciform energy."
+	icon_state = "channeling"
+
+/datum/perk/neat
+	name = "Neat"
+	desc = "You're used to see blood and filth in all its forms. Your motto: a clean ship is the first step to enlightenment. \
+			This perk reduces the total sanity damage you can take from what is happening around you. \
+			You can regain sanity by cleaning."
+	icon_state = "neat" // https://game-icons.net/1x1/delapouite/broom.html
+
+/datum/perk/neat/assign(mob/living/carbon/human/H)
+	..()
+	if(holder)
+		holder.sanity.view_damage_threshold += 20
+
+/datum/perk/neat/remove()
+	if(holder)
+		holder.sanity.view_damage_threshold -= 20
+	..()
+
+/datum/perk/merchant
+	name = "Merchant"
+	desc = "Money is what matters for you, and it's so powerful it lets you improve your skills. \
+			This perk lets you use money for leveling up. The credits need to be in your backpack."
+	icon_state = "merchant" // https://game-icons.net/1x1/lorc/cash.html and https://game-icons.net/1x1/delapouite/graduate-cap.html slapped on https://game-icons.net/1x1/lorc/trade.html
+
+/datum/perk/merchant/assign(mob/living/carbon/human/H)
+	..()
+	if(holder)
+		holder.sanity.valid_inspirations += /obj/item/spacecash/bundle
+
+/datum/perk/merchant/remove()
+	if(holder)
+		holder.sanity.valid_inspirations -= /obj/item/spacecash/bundle
+	..()
+
+/datum/perk/codespeak
+	name = "Codespeak"
+	desc = "You know Ironhammer PMC's code language, adapted to use aboard of CEV Eris."
+	icon_state = "codespeak" // https://game-icons.net/1x1/delapouite/police-officer-head.html
+	var/list/codespeak_procs = list(
+		/mob/living/carbon/human/proc/codespeak_help,
+		/mob/living/carbon/human/proc/codespeak_backup,
+		/mob/living/carbon/human/proc/codespeak_clear,
+		/mob/living/carbon/human/proc/codespeak_romch,
+		/mob/living/carbon/human/proc/codespeak_bigromch,
+		/mob/living/carbon/human/proc/codespeak_murderhobo,
+		/mob/living/carbon/human/proc/codespeak_serb,
+		/mob/living/carbon/human/proc/codespeak_commie,
+		/mob/living/carbon/human/proc/codespeak_carrion,
+		/mob/living/carbon/human/proc/codespeak_mutant,
+		/mob/living/carbon/human/proc/codespeak_dead_crew,
+		/mob/living/carbon/human/proc/codespeak_wounded_crew,
+		/mob/living/carbon/human/proc/codespeak_dead_oper,
+		/mob/living/carbon/human/proc/codespeak_wounded_oper,
+		/mob/living/carbon/human/proc/codespeak_ban,
+		/mob/living/carbon/human/proc/codespeak_criminal,
+		/mob/living/carbon/human/proc/codespeak_status,
+		/mob/living/carbon/human/proc/codespeak_shutup,
+		/mob/living/carbon/human/proc/codespeak_understood,
+		/mob/living/carbon/human/proc/codespeak_yes,
+		/mob/living/carbon/human/proc/codespeak_no,
+		/mob/living/carbon/human/proc/codespeak_what,
+		/mob/living/carbon/human/proc/codespeak_busted,
+		/mob/living/carbon/human/proc/codespeak_jailbreak,
+		/mob/living/carbon/human/proc/codespeak_understood_local,
+		/mob/living/carbon/human/proc/codespeak_yes_local,
+		/mob/living/carbon/human/proc/codespeak_no_local,
+		/mob/living/carbon/human/proc/codespeak_engage_local,
+		/mob/living/carbon/human/proc/codespeak_hold_local,
+		/mob/living/carbon/human/proc/codespeak_go_local,
+		/mob/living/carbon/human/proc/codespeak_stop_local,
+		/mob/living/carbon/human/proc/codespeak_idiot_local,
+		/mob/living/carbon/human/proc/codespeak_warcrime_yes_local,
+		/mob/living/carbon/human/proc/codespeak_warcrime_no_local,
+		/mob/living/carbon/human/proc/codespeak_run_local
+		)
+
+/datum/perk/codespeak/assign(mob/living/carbon/human/H)
+	..()
+	if(holder)
+		holder.verbs += codespeak_procs
+
+
+/datum/perk/codespeak/remove()
+	if(holder)
+		holder.verbs -= codespeak_procs
+	..()
+

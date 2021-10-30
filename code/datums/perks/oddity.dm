@@ -114,11 +114,6 @@
 			You heal a slight amount by smoking and recover sanity more quickly."
 	icon_state = "cigarette" // https://game-icons.net
 
-/datum/perk/oddity/nightcrawler
-	name = "Nightcrawler"
-	desc = "You are faster in the darkness."
-	icon_state = "night" // https://game-icons.net/1x1/lorc/night-sky.html
-
 /datum/perk/oddity/fast_fingers
 	name = "Fast Fingers"
 	desc = "Nothing is safe around your hands. You are a true kleptomaniac. \
@@ -210,11 +205,6 @@
 	name = "Sure Step"
 	desc = " You are more likely to avoid traps."
 	icon_state = "mantrap"
-
-/datum/perk/oddity/market_prof
-	name = "Market Professional"
-	desc = "Just by looking at the item you can know how much it cost."
-	icon_state = "market_prof"
 
 /datum/perk/oddity/gunsmith
 	name = "Gunsmith"

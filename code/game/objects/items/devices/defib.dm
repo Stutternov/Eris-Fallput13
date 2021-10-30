@@ -198,7 +198,8 @@
 
 /obj/item/device/defib_kit/compact/combat/adv
 	name = "advanced defibrillator"
-	desc = "A belt-equipped SI branded defibrillator that can be rapidly deployed. Does not have the restrictions or safeties of conventional defibrillators and can revive through space suits."
+	desc = "A belt-equipped SI branded defibrillator that can be rapidly deployed. Does not have the restrictions or safeties of conventional defibrillators and can revive through power armor suits. \
+			Though it takes advanced training to use these! Not just any schmuck can figure out where the exact connection points go on this thing."
 	paddles = /obj/item/shockpaddles/linked/combat/advanced
 	icon_state = "advdefibcompact"
 
@@ -280,7 +281,7 @@
 
 /obj/item/shockpaddles/proc/can_use(mob/user, mob/M)
 	if(si_only)
-		if(!user.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !user.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !user.stats?.getPerk(PERK_MEDICAL_EXPERT))
+		if(!user.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !user.stats?.getPerk(PERK_ADVANCED_MEDICAL))
 			to_chat(user, "<span class='warning'>\The [src] is so complex your need training to use this.</span>")
 			return 0
 	if(busy)
