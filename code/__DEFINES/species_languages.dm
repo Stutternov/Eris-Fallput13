@@ -25,12 +25,11 @@
 // Languages.
 #define LANGUAGE_COMMON "English"
 #define LANGUAGE_CYRILLIC "Russian"
-#define LANGUAGE_SERBIAN "Serbian"
 #define LANGUAGE_JIVE	"Sign Language"
 #define LANGUAGE_GERMAN "German"
 #define LANGUAGE_NEOHONGO "Chinese"
 #define LANGUAGE_LATIN "Latin"
-
+#define LANGUAGE_SPANISH "Spanish"
 
 #define LANGUAGE_ROBOT "Robot Talk"
 #define LANGUAGE_DRONE "Drone Talk"
@@ -43,7 +42,7 @@
 #define LANGUAGE_BLITZ "Blitzshell Communique"
 
 #define LANGUAGE_WHITELEG "Whiteleg"
-#define LANGUAGE_TRIBAL	"Gibberish"
+#define LANGUAGE_DEADHORSE	"Dead Horses"
 
 
 // Language flags.
