@@ -8,6 +8,8 @@
 #define PERK_NOBLE /datum/perk/fate/noble
 #define PERK_RAT /datum/perk/fate/rat
 #define PERK_SICKLY_UPBRINGING /datum/perk/fate/sickly_upbringing
+#define PERK_TOXIC_REVENGER /datum/perk/oddity/toxic_revenger
+#define PERK_KLUTZ /datum/perk/fate/klutz
 
 // oddity perks
 #define PERK_FAST_WALKER /datum/perk/oddity/fast_walker
@@ -27,7 +29,6 @@
 #define PERK_BALLS_OF_PLASTEEL /datum/perk/oddity/balls_of_plasteel
 #define PERK_JUNKBORN /datum/perk/oddity/junkborn
 #define PERK_ASS_OF_CONCRETE /datum/perk/oddity/ass_of_concrete
-#define PERK_TOXIC_REVENGER /datum/perk/oddity/toxic_revenger
 #define PERK_ABSOLUTE_GRAB /datum/perk/oddity/absolute_grab
 #define PERK_SURE_STEP /datum/perk/oddity/sure_step
 #define PERK_MARKET_PROF /datum/perk/market_prof

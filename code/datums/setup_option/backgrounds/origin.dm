@@ -172,7 +172,7 @@
 
 /////////////////
 //Ghoul Origins//
-////////////////
+/////////////////
 
 /datum/category_item/setup_option/background/origin/prewar
 	name = "Pre-War Ghoul"

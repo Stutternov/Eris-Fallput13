@@ -1,6 +1,6 @@
 /datum/perk/fate/freelancer
 	name = "Jack of All Trades"
-	icon_state = "skills"
+	icon_state = "wanted"
 	desc = "Whatever job needs doing, you can probably do it! You're a jack of all trades, after all. But.. you're also a master at none. \
 			This perk checks your highest stat, lowers it by 10 and improves all others by 4."
 
@@ -184,7 +184,7 @@
 /datum/perk/fate/klutz
 	name = "Klutz"
 	desc = "You find a lot of tasks a little beyond your ability to perform, but being accident prone has at least made you used to getting hurt."
-	//icon_state = "selfmedicated" // https://game-icons.net/1x1/lorc/overdose.html
+	icon_state = "klutz" // https://game-icons.net
 
 /datum/perk/klutz/assign(mob/living/carbon/human/H)
 	..()
@@ -193,3 +193,34 @@
 /datum/perk/klutz/remove()
 	holder.mutations.Remove(CLUMSY)
 	..()
+
+/datum/perk/fate/toxic_revenger
+	name = "Glowing One"
+	desc = "A heart of gold does not matter when blood is toxic. Those who breathe your air, share your fate. \
+			People around you receive toxin damage."
+	icon_state = "Hazmat" // https://game-icons.net
+	var/cooldown = 1 MINUTES
+	var/initial_time
+
+/datum/perk/oddity/toxic_revenger/assign(mob/living/carbon/human/H)
+	..()
+	initial_time = world.time
+
+/datum/perk/oddity/toxic_revenger/on_process()
+	if(!..())
+		return
+	if(holder.species.flags & NO_BREATHE || holder.internal)
+		return
+	if(world.time < initial_time + cooldown)
+		return
+	initial_time = world.time
+	for(var/mob/living/L in viewers(holder, 5))
+		if(!L)
+			continue
+		if(ishuman(L))
+			var/mob/living/carbon/human/H = L
+			if(H.stat == DEAD || H.internal || H.stats.getPerk(PERK_TOXIC_REVENGER) || (H.species.flags & NO_BREATHE))
+				continue
+		L.reagents?.add_reagent("toxin", 5)
+		L.emote("cough")
+		to_chat(L, SPAN_WARNING("[holder] emits a strange smell."))

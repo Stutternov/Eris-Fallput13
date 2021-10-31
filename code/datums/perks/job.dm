@@ -101,13 +101,13 @@
 	icon_state = "market_prof"
 
 /datum/perk/sanityboost
-	name = "True Faith"
-	desc = "When near an obelisk, you feel your mind at ease. Your sanity regeneration is boosted."
-	icon_state = "sanityboost" // https://game-icons.net/1x1/lorc/templar-eye.html
+	name = "Cult of Mars"
+	desc = "When near a banner, you feel your mind at ease. Your sanity regeneration is boosted."
+	icon_state = "legion" // https://game-icons.net/1x1/lorc/templar-eye.html
 
 /datum/perk/active_sanityboost
-	name = "True Faith (Active)"
-	icon_state = "sanityboost" // https://game-icons.net/1x1/lorc/templar-eye.html
+	name = "Cult of Mars (Active)"
+	icon_state = "legion" // https://game-icons.net/1x1/lorc/templar-eye.html
 
 /datum/perk/active_sanityboost/assign(mob/living/carbon/human/H)
 	..()
@@ -127,7 +127,7 @@
 
 /datum/perk/active_inspiration
 	name = "Exotic Inspiration (Active)"
-	icon_state = "inspiration_active" // https://game-icons.net/1x1/lorc/enlightenment.html
+	icon_state = "drinking" // https://game-icons.net/1x1/lorc/enlightenment.html
 
 /datum/perk/active_inspiration/assign(mob/living/carbon/human/H)
 	..()
@@ -172,6 +172,12 @@
 	if(holder)
 		holder.sanity_damage += 2
 	..()
+
+/datum/perk/bolttraining
+	name = "Bolt Action Rifle Training"
+	desc = "You likely grew up either on the frontiers of civilization hunting food for survive, rustling brahmin from barons for a living or dealing with sub-par weaponry all your life. \
+			But hey, you've learned how to keep the bolt on your rifle greased, fire fast and fire accurately. Who said bolt-actions are the way of the past!?"
+	icon_state = "bolt_action"
 
 /datum/perk/rezsickness
 	name = "Revival Sickness"
