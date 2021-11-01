@@ -1,10 +1,9 @@
-
 /datum/job/headkhan
 	title = "Head Khan"
 	flag = KHAN
 	department = DEPARTMENT_KHAN
-	head_position = 1
 	department_flag = KHAN
+	head_position = 1
 	faction = "The Great Khans"
 	total_positions = 1
 	spawn_positions = 1
@@ -12,7 +11,7 @@
 	selection_color = "#b3a68c"
 	wage = WAGE_NONE
 	ideal_character_age = 40
-	perks = list(/datum/perk/oddity/market_prof)
+	perks = list(/datum/perk/market_prof)
 	stat_modifiers = list(
 		STAT_ROB = 10,
 		STAT_COG = 20,
