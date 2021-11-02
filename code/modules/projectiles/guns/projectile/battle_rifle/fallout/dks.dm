@@ -1,4 +1,4 @@
-/obj/item/gun/projectile/automatic/dks
+/obj/item/gun/projectile/dks
 	name = "\"DKS-501\" Sniper Rifle"
 	desc = "The DKS-501 Sniper Rifle is a staple sniper rifle designed for the U.S Military prior to the Great War. \
 			This 7.62 sniper sports a state of the art scope, a superior polymer stock and a robust design in its ported barrel. \
@@ -19,12 +19,27 @@
 	cocked_sound = 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	zoom_factor = 0.6
 	recoil_buildup = 2
-	damage_multiplier = 1.4
-	penetration_multiplier = 1.6
+	damage_multiplier = 1.2
+	penetration_multiplier = 1.4
 	one_hand_penalty = 25 //do not one arm this if you have a brain
+	fire_delay = 6
+	extra_damage_mult_scoped = 0.2
 
-	gun_tags = list(GUN_SILENCABLE)
+/obj/item/gun/projectile/dks/on_update_icon()
+	..()
 
-	init_firemodes = list(
-		SEMI_AUTO_NODELAY,
-		)
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if (ammo_magazine)
+		iconstring += "[ammo_magazine? "_mag": ""]"
+
+	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
+		iconstring += "_slide"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
+
+/obj/item/gun/projectile/dks/Initialize()
+	. = ..()
+	update_icon()

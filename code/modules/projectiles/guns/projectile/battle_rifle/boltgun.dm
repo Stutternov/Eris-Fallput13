@@ -30,6 +30,7 @@
 	gun_parts = list(/obj/item/stack/material/steel = 16)
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/boltgun/obrez
+	var/bolt_training = TRUE
 	var/bolt_open = 0
 	var/item_suffix = ""
 

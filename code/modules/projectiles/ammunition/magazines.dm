@@ -928,6 +928,41 @@
 	rarity_value = 5
 	spawn_tags = SPAWN_AMMO_COMMON
 
+//////// .357 SPEEDLOADERS //////////
+
+/obj/item/ammo_magazine/speed357
+	name = ".357 speed loader"
+	icon_state = "slmagnum_l"
+	icon = 'icons/obj/ammo_speed.dmi'
+	caliber = CAL_357
+	ammo_type = /obj/item/ammo_casing/magnum
+	matter = list(MATERIAL_STEEL = 3)
+	max_ammo = 6
+	multiple_sprites = 1
+	spawn_tags = SPAWN_TAG_AMMO_IH
+	rarity_value = 5
+
+/obj/item/ammo_magazine/speed357/empty
+	icon_state = "slmagnum"
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/speed357/practice
+	name = ".357 speed loader (practice)"
+	icon_state = "slmagnum_p"
+	ammo_type = /obj/item/ammo_casing/magnum/practice
+	spawn_tags = null
+
+/obj/item/ammo_magazine/speed357/highvelocity
+	name = ".357 speed loader (high-velocity)"
+	icon_state = "slmagnum_hv"
+	ammo_type = /obj/item/ammo_casing/magnum/hv
+	spawn_tags = null
+
+/obj/item/ammo_magazine/speed357/rubber
+	name = ".357 speed loader (rubber)"
+	icon_state = "slmagnum_r"
+	ammo_type = /obj/item/ammo_casing/magnum/rubber
+
 //////// .44 SPEEDLOADERS //////////
 
 /obj/item/ammo_magazine/slmagnum

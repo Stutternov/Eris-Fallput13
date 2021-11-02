@@ -22,7 +22,4 @@
 	zoom_factor = 0.8
 	recoil_buildup = 2
 	one_hand_penalty = 30 //no.
-
-	init_firemodes = list(
-		SEMI_AUTO_NODELAY,
-		)
+	fire_delay = 7
