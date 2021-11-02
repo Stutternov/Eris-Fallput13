@@ -1,10 +1,6 @@
 /datum/design/autolathe/tool/crowbar
 	build_path = /obj/item/tool/crowbar
 
-/datum/design/autolathe/tool/crowbar_onestar
-	name = "one star crowbar"
-	build_path = /obj/item/tool/crowbar/onestar
-
 /datum/design/autolathe/tool/multitool
 	build_path = /obj/item/tool/multitool
 
@@ -15,10 +11,6 @@
 /datum/design/autolathe/tool/weldertool_adv
 	name = "advanced welding tool"
 	build_path = /obj/item/tool/weldingtool/advanced
-
-/datum/design/autolathe/tool/weldertool_onestar
-	name = "one star welding tool"
-	build_path = /obj/item/tool/weldingtool/onestar
 
 /datum/design/autolathe/tool/weldermask
 	build_path = /obj/item/clothing/head/welding
@@ -115,14 +107,8 @@
 /datum/design/autolathe/tool/circularsaw
 	build_path = /obj/item/tool/saw/circular
 
-/datum/design/autolathe/tool/advanced_circularsaw
-	build_path = /obj/item/tool/saw/circular/advanced
-
 /datum/design/autolathe/tool/chainsaw
 	build_path = /obj/item/tool/saw/chain
-
-/datum/design/autolathe/tool/hypersaw
-	build_path = /obj/item/tool/saw/hyper
 
 /datum/design/autolathe/tool/surgicaldrill
 	build_path = /obj/item/tool/surgicaldrill

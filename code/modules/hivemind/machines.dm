@@ -324,8 +324,6 @@
 	//internals
 	var/list/my_wireweeds = list()
 	var/list/reward_item = list(
-		/obj/item/tool/weldingtool/hivemind,
-		/obj/item/tool/crowbar/pneumatic/hivemind,
 		/obj/item/reagent_containers/glass/beaker/hivemind,
 		/obj/item/oddity/hivemind/old_radio,
 		/obj/item/oddity/hivemind/old_pda
