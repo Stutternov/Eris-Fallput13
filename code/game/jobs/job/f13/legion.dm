@@ -108,7 +108,7 @@ Centurion
 	supervisors = "the Decani and Centurion"
 	outfit_type = /decl/hierarchy/outfit/job/assistant
 
-/obj/landmark/join/start/centurion
-	name = "Centurion"
+/obj/landmark/join/start/vetleg
+	name = "Veteran Legionary"
 	icon_state = "player-gold-officer"
 	join_tag = /datum/job/vetleg
