@@ -152,7 +152,7 @@ var/list/flooring_types
 
 /decl/flooring/wasteland
 	name = "sand"
-	desc = "Corse, hurts your feet and fills your lungs."
+	desc = "Coarse, gets everywhere."
 	icon = 'icons/turf/wasteland.dmi'
 	icon_base = "wasteland"
 	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
@@ -166,6 +166,7 @@ var/list/flooring_types
 	flags = TURF_REMOVE_SHOVEL | TURF_CAN_BURN | TURF_CAN_BREAK
 	build_type = null
 	footstep_sound = "asteroid"
+
 
 //=========PLATING==========\\
 
@@ -638,7 +639,7 @@ var/list/flooring_types
 
 /decl/flooring/wood
 	name = "wooden floor"
-	desc = "Polished redwood planks."
+	desc = "Polished oak planks."
 	footstep_sound = "wood"
 	icon = 'icons/turf/flooring/wood.dmi'
 	icon_base = "wood"
@@ -648,6 +649,29 @@ var/list/flooring_types
 	build_type = /obj/item/stack/tile/wood
 	smooth_nothing = TRUE
 	flags = TURF_CAN_BREAK | TURF_CAN_BURN | TURF_IS_FRAGILE | TURF_REMOVE_SCREWDRIVER | TURF_HIDES_THINGS
+
+/decl/flooring/wood/maple
+	name = "maple floor"
+	desc = "Rare Californian maple planks."
+	icon_base = "maplefloor"
+
+/decl/flooring/wood/old
+	name = "old floor"
+	desc = "Stained, faded oak planks."
+	icon_base = "wood_old"
+
+/decl/flooring/wood/dark
+	name = "dark wood floor"
+	desc = "Oiled oak planks."
+	icon_base = "wood_dark"
+
+/decl/flooring/wood/hardwood
+	name = "hardwood floor"
+	desc = "Tiled hardwood."
+	icon_base = "hardwood"
+
+/decl/flooring/wood/hardwood/diagonal
+	icon_base = "hardwood_diagonal"
 
 /decl/flooring/reinforced
 	name = "reinforced floor"
