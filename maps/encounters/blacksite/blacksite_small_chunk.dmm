@@ -682,7 +682,7 @@
 "Lm" = (
 /obj/structure/table/onestar,
 /obj/item/tool/screwdriver/combi_driver/onestar,
-/obj/item/tool/crowbar/onestar,
+/obj/item/tool/crowbar/prewar,
 /obj/spawner/prothesis_one_star,
 /obj/spawner/prothesis_one_star,
 /obj/spawner/medical,
