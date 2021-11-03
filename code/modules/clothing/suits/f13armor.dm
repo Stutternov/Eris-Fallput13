@@ -9,6 +9,7 @@ Medium armor - Medium armor should be 'faction standard' for combatants that are
 
 Heavy armor - Heavy armor should be limited to special finds or specialist classes in factions; such as a heavy trooper. These should have a higher amount of slowdown.
 
+- This is SPECIFICALLY for loot and non-factions/outlaws. Factions should have their own files. For example, suits/f13bos.dm, suits/f13ncr.dm, etc.
 */
 
 
@@ -154,6 +155,22 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 5
 	)
 
+/obj/item/clothing/suit/armor/f13/combat/raider
+	name = "raider combat armor"
+	desc = "An old set of military grade combat armor that has been upgraded with spikes and extra torso plating to protect against bladed weapons.."
+	icon_state = "combat_armor"
+	item_state = "combat_armor"
+	equip_delay = 1 SECONDS
+	slowdown = 0.15
+	armor = list(
+		melee = 40,
+		bullet = 35,
+		energy = 25,
+		bomb = 20,
+		bio = 0,
+		rad = 5
+	)
+
 /obj/item/clothing/suit/armor/f13/combat/mk2
 	name = "reinforced combat armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates."
@@ -171,7 +188,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	)
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/raider
-	name = "reinforced combat armor"
+	name = "reinforced raider armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates."
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
