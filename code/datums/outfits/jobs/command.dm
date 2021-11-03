@@ -13,7 +13,7 @@
 
 /decl/hierarchy/outfit/job/captain/New()
 	..()
-	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/storage/backpack/captain
+	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/storage/backpack/satchel/captain
 	backpack_overrides[/decl/backpack_outfit/satchel]       = /obj/item/storage/backpack/satchel/captain
 
 /decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)

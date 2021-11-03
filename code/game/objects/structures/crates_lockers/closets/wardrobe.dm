@@ -137,10 +137,7 @@
 	new /obj/item/clothing/mask/bandana/gold(src)
 	new /obj/item/clothing/mask/bandana/purple(src)
 	new /obj/item/clothing/mask/bandana/camo(src)
-	new /obj/item/storage/backpack/sport/purple(src)
-	new /obj/item/storage/backpack/sport/green(src)
 	new /obj/item/storage/backpack/sport/blue(src)
-	new /obj/item/storage/backpack/sport/orange(src)
 
 /obj/structure/closet/wardrobe/pjs
 	name = "pajama wardrobe"
