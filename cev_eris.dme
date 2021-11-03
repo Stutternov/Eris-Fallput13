@@ -1511,6 +1511,7 @@
 #include "code\modules\clothing\gloves\stungloves.dm"
 #include "code\modules\clothing\head\armor.dm"
 #include "code\modules\clothing\head\collectable.dm"
+#include "code\modules\clothing\head\f13armor.dm"
 #include "code\modules\clothing\head\hardhat.dm"
 #include "code\modules\clothing\head\jobs.dm"
 #include "code\modules\clothing\head\mindreader.dm"
