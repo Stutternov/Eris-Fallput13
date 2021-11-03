@@ -1004,7 +1004,7 @@
 /area/map_template/crashed_pod)
 "ca" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/storage/backpack/industrial,
+/obj/item/storage/backpack/canvas,
 /obj/item/paper_bin,
 /obj/spawner/booze,
 /obj/effect/decal/cleanable/dirt,
