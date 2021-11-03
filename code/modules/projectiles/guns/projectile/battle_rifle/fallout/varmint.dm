@@ -27,6 +27,7 @@
 /obj/item/gun/projectile/boltgun/varmint/small
 	name = ".22 LR \"Varmint\" Rifle"
 	desc = "The varmint rifle is the taple hunting rifle across the entire west coast. Someone bought this one for either hunting vermint, birds or for practice."
+	caliber = CAL_22
 	max_shells = 18
 	fire_delay = 6
 	damage_multiplier = 1.5

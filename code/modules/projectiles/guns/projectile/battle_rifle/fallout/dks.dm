@@ -19,8 +19,9 @@
 	cocked_sound = 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	zoom_factor = 0.6
 	recoil_buildup = 2
-	damage_multiplier = 1.2
+	damage_multiplier = 1.0
 	penetration_multiplier = 1.4
+	extra_damage_mult_scoped = 0.2
 	one_hand_penalty = 25 //do not one arm this if you have a brain
 	fire_delay = 6
 	extra_damage_mult_scoped = 0.2

@@ -11,8 +11,9 @@
 	caliber = CAL_ANTIM
 	recoil_buildup = 60
 	handle_casings = HOLD_CASINGS
-	load_method = SINGLE_CASING
-	max_shells = 1
+	load_method = MAGAZINE
+	mag_well = MAG_WELL_RIFLE
+	max_shells = 10
 	ammo_type = /obj/item/ammo_casing/antim
 	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/rifle_load.ogg'

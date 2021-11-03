@@ -17,8 +17,9 @@
 	zoom_factor = 0.2
 	max_shells = 14
 	fire_delay = 12 // double the standart
-	damage_multiplier = 1.4
+	damage_multiplier = 1.2
 	penetration_multiplier = 1.5
+	extra_damage_mult_scoped = 0.2
 	recoil_buildup = 1.6 // reduced from the AK's/Takeshi's buildup of 1.7/1.8 because >lol boltgun
 	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
 	reload_sound = 'sound/weapons/guns/interact/rifle_load.ogg'

@@ -3,8 +3,8 @@
 	name = "7.62 Lee Enfield Rifle"
 	desc = "The Mk III Lee Enfield is a historic rifle dating back to the previous World Wars. \
 			This 10-round internal loading rifle is a historical wonder, reproduced and saught after by pre-Great War collectors."
-	icon_state = "boltgun_wood"
-	item_suffix  = "_wood"
+	icon = 'icons/obj/guns/projectile/enfield.dmi'
+	icon_state = "commando"
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.2
 	recoil_buildup = 1.6

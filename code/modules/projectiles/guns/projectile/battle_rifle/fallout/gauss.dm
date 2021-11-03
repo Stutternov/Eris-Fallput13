@@ -20,6 +20,7 @@
 	reload_sound = 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	zoom_factor = 0.8
+	extra_damage_mult_scoped = 0.2
 	recoil_buildup = 2
 	one_hand_penalty = 30 //no.
 	fire_delay = 7
