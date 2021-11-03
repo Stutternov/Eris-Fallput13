@@ -13,14 +13,6 @@
 	name = "Bald"
 	icon_state = "bald"
 
-/datum/sprite_accessory/hair/amazon
-	name = "Amazon"
-	icon_state = "amazon"
-
-/datum/sprite_accessory/hair/angelique
-	name = "Angelique"
-	icon_state = "angelique"
-
 /datum/sprite_accessory/hair/asymmetrical
 	name = "Asymmetrical Bob"
 	icon_state = "asymmbob"
@@ -49,10 +41,6 @@
 	name = "Birdnest"
 	icon_state = "birdnest"
 
-/datum/sprite_accessory/hair/birdnest2
-	name = "Birdnest 2"
-	icon_state = "birdnest2"
-
 /datum/sprite_accessory/hair/bob
 	name = "Bob"
 	icon_state = "bobcut"
@@ -64,10 +52,6 @@
 /datum/sprite_accessory/hair/bowl
 	name = "Bowl"
 	icon_state = "bowl"
-
-/datum/sprite_accessory/hair/bookish
-	name = "Bookish"
-	icon_state = "lem"
 
 /datum/sprite_accessory/hair/busness
 	name = "Business"
@@ -104,10 +88,6 @@
 /datum/sprite_accessory/hair/buzz
 	name = "Buzzcut"
 	icon_state = "buzzcut"
-
-/datum/sprite_accessory/hair/celebcurls
-	name = "Celeb Curls"
-	icon_state = "celebcurls"
 
 /datum/sprite_accessory/hair/chop
 	name = "Chop"
@@ -152,10 +132,6 @@
 /datum/sprite_accessory/hair/eighties
 	name = "Eighties"
 	icon_state = "80s"
-
-/datum/sprite_accessory/hair/elize
-	name = "Elize"
-	icon_state = "elize"
 
 /datum/sprite_accessory/hair/emo
 	name = "Emo"
@@ -237,10 +213,6 @@
 	name = "Joestar"
 	icon_state = "joestar"
 
-/datum/sprite_accessory/hair/kanaya
-	name = "Kanaya"
-	icon_state = "kanaya"
-
 /datum/sprite_accessory/hair/kare
 	name = "Kare"
 	icon_state = "kare"
@@ -256,14 +228,6 @@
 /datum/sprite_accessory/hair/longer
 	name = "Long"
 	icon_state = "vlong"
-
-/datum/sprite_accessory/hair/longeralt2
-	name = "Long 2"
-	icon_state = "longeralt2"
-
-/datum/sprite_accessory/hair/longeralt3
-	name = "Long 3"
-	icon_state = "longeralt3"
 
 /datum/sprite_accessory/hair/longbraid
 	name = "Long Braid"
@@ -284,10 +248,6 @@
 /datum/sprite_accessory/hair/manbun
 	name = "Man Bun"
 	icon_state = "manbun"
-
-/datum/sprite_accessory/hair/marysue
-	name = "Mary Sue"
-	icon_state = "marysue"
 
 /datum/sprite_accessory/hair/mbraid
 	name = "Medium Braid"
@@ -340,10 +300,6 @@
 /datum/sprite_accessory/hair/newyou
 	name = "New You"
 	icon_state = "newyou"
-
-/datum/sprite_accessory/hair/nia
-	name = "Nia"
-	icon_state = "nia"
 
 /datum/sprite_accessory/hair/ombre
 	name = "Ombre"
@@ -513,14 +469,17 @@
 /datum/sprite_accessory/hair/thinning
 	name = "Thinning"
 	icon_state = "thinning"
+	gender = MALE
 
 /datum/sprite_accessory/hair/thinningfront
 	name = "Thinning Front"
 	icon_state = "thinningfront"
+	gender = MALE
 
 /datum/sprite_accessory/hair/thinningrear
 	name = "Thinning Rear"
 	icon_state = "thinningrear"
+	gender = MALE
 
 /datum/sprite_accessory/hair/messy5
 	name = "Tidy"
@@ -533,10 +492,9 @@
 /datum/sprite_accessory/hair/topknot
 	name = "Top Knot"
 	icon_state = "topknot"
+	gender = MALE
 
-/datum/sprite_accessory/hair/sideponytail3
-	name = "Tress Shoulder"
-	icon_state = "tressshoulder"
+
 
 /datum/sprite_accessory/hair/undercut
 	name = "Undercut"
@@ -595,6 +553,10 @@
 	icon_state = "ladylike"
 	gender = FEMALE
 
+/datum/sprite_accessory/hair/female/sideponytail3
+	name = "Tress Shoulder"
+	icon_state = "tressshoulder"
+
 /datum/sprite_accessory/hair/female/ladylike
 	name = "Ladylike"
 	icon_state = "ladylike2"
@@ -639,6 +601,10 @@
 	name = "Hime Cut 2"
 	icon_state = "himecut_alt"
 
+/datum/sprite_accessory/hair/female/himeup
+	name = "Himeup"
+	icon_state = "himeup"
+
 /datum/sprite_accessory/hair/female/sideponytail4
 	name = "Side Ponytail 2"
 	icon_state = "ponytailf"
@@ -662,10 +628,6 @@
 /datum/sprite_accessory/hair/female/beehive
 	name = "Beehive"
 	icon_state = "beehive"
-
-/datum/sprite_accessory/hair/female/beehive2
-	name = "Beehive 2"
-	icon_state = "beehive2"
 
 /datum/sprite_accessory/hair/female/nitori
 	name = "UwU"
