@@ -6504,8 +6504,8 @@
 /obj/item/shovel,
 /obj/item/storage/ore,
 /obj/item/storage/ore,
-/obj/item/storage/backpack/industrial,
-/obj/item/storage/backpack/industrial,
+/obj/item/storage/backpack/canvas,
+/obj/item/storage/backpack/canvas,
 /obj/machinery/door/window/northright,
 /obj/structure/window/reinforced{
 	dir = 8;

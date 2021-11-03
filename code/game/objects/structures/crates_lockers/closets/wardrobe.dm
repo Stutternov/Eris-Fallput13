@@ -95,7 +95,6 @@
 	new /obj/item/clothing/shoes/color/white(src)
 	new /obj/item/clothing/shoes/color/white(src)
 	new /obj/item/clothing/shoes/color/white(src)
-	new /obj/item/storage/backpack/sport/white(src)
 
 /obj/structure/closet/wardrobe/color/grey
 	name = "grey wardrobe"
@@ -111,7 +110,6 @@
 	new /obj/item/clothing/head/soft/grey(src)
 	new /obj/item/clothing/head/soft/grey(src)
 	new /obj/item/clothing/head/soft/grey(src)
-	new /obj/item/storage/backpack/sport(src)
 
 /obj/structure/closet/wardrobe/color/mixed
 	name = "mixed wardrobe"
@@ -137,7 +135,6 @@
 	new /obj/item/clothing/mask/bandana/gold(src)
 	new /obj/item/clothing/mask/bandana/purple(src)
 	new /obj/item/clothing/mask/bandana/camo(src)
-	new /obj/item/storage/backpack/sport/blue(src)
 
 /obj/structure/closet/wardrobe/pjs
 	name = "pajama wardrobe"

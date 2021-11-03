@@ -4,7 +4,6 @@
 	icon_state = "cap"
 
 /obj/structure/closet/secure_closet/reinforced/captains/populate_contents()
-	new /obj/item/storage/backpack/satchel/captain(src)
 	new /obj/item/clothing/under/rank/captain(src)
 	new /obj/item/clothing/suit/storage/captain(src)
 	new /obj/item/clothing/suit/armor/vest(src)
