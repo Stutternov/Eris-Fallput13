@@ -91,9 +91,6 @@
 /datum/design/autolathe/tool/spade
 	build_path = /obj/item/tool/shovel/spade
 
-/datum/design/autolathe/tool/shovel/power
-	build_path = /obj/item/tool/shovel/power
-
 /datum/design/autolathe/tool/mop
 	name = "janitor's mop"
 	build_path = /obj/item/mop
