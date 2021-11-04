@@ -51,6 +51,20 @@ var/list/floor_decals = list()
 		T.update_icon()
 	return INITIALIZE_HINT_QDEL
 
+// Fallout Certified
+
+/obj/effect/floor_decal/wasteland_edge
+	name = "desert edge"
+	icon = 'icons/turf/wasteland.dmi'
+	icon_state = "desertedge"
+
+/obj/effect/floor_decal/wasteland_corner
+	name = "desert corner"
+	icon = 'icons/turf/wasteland.dmi'
+	icon_state = "desertcorner"
+
+// Eris stuff
+
 
 /obj/effect/floor_decal/spline/plain
 	name = "spline - plain"

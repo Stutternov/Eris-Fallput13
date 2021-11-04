@@ -60,10 +60,35 @@
 	icon_state = "dirt"
 	initial_flooring = /decl/flooring/dirt
 
+// Use directions to utilize all the many sand sprites
 /turf/simulated/floor/wasteland
 	name = "wasteland"
 	icon = 'icons/turf/wasteland.dmi'
-	icon_state = "wasteland"
+	icon_state = "desertsmooth"
+	initial_flooring = /decl/flooring/wasteland
+
+/turf/simulated/floor/wasteland/coarse
+	name = "wasteland"
+	icon = 'icons/turf/wasteland.dmi'
+	icon_state = "desertcoarse"
+	initial_flooring = /decl/flooring/wasteland
+
+/turf/simulated/floor/wasteland/coarse2
+	name = "wasteland"
+	icon = 'icons/turf/wasteland.dmi'
+	icon_state = "desertcoarse2"
+	initial_flooring = /decl/flooring/wasteland
+
+/turf/simulated/floor/wasteland/rough
+	name = "wasteland"
+	icon = 'icons/turf/wasteland.dmi'
+	icon_state = "desertrough"
+	initial_flooring = /decl/flooring/wasteland
+
+/turf/simulated/floor/wasteland/cracked
+	name = "wasteland"
+	icon = 'icons/turf/wasteland.dmi'
+	icon_state = "desertcracked"
 	initial_flooring = /decl/flooring/wasteland
 
 /turf/simulated/floor/road

@@ -154,7 +154,7 @@ var/list/flooring_types
 	name = "sand"
 	desc = "Coarse, gets everywhere."
 	icon = 'icons/turf/wasteland.dmi'
-	icon_base = "wasteland"
+	icon_base = "desertsmooth"
 	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
 	build_type = null
 
@@ -642,13 +642,19 @@ var/list/flooring_types
 	desc = "Polished oak planks."
 	footstep_sound = "wood"
 	icon = 'icons/turf/flooring/wood.dmi'
-	icon_base = "wood"
+	icon_base = "housebase"
 	has_damage_range = 6
 	damage_temperature = T0C+200
 	descriptor = "planks"
 	build_type = /obj/item/stack/tile/wood
 	smooth_nothing = TRUE
 	flags = TURF_CAN_BREAK | TURF_CAN_BURN | TURF_IS_FRAGILE | TURF_REMOVE_SCREWDRIVER | TURF_HIDES_THINGS
+	plating_type = /decl/flooring/wood
+
+/decl/flooring/wood/oak
+	name = "oak floor"
+	desc = "rough planks."
+	icon_base = "wood"
 
 /decl/flooring/wood/maple
 	name = "maple floor"
