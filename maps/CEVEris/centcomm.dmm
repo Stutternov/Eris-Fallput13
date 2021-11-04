@@ -5307,12 +5307,6 @@
 /area/shuttle/mercenary)
 "vF" = (
 /obj/structure/table/rack,
-/obj/item/storage/backpack/satchel/military,
-/obj/item/storage/backpack/satchel/military,
-/obj/item/storage/backpack/satchel/military,
-/obj/item/storage/backpack/satchel/military,
-/obj/item/storage/backpack/satchel/military,
-/obj/item/storage/backpack/satchel/military,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},

@@ -35,7 +35,6 @@
 	mask = /obj/item/clothing/mask/breath
 	shoes = /obj/item/clothing/shoes/color/orange
 	r_pocket = /obj/item/tank/emergency_oxygen
-	back = /obj/item/storage/backpack/sport/orange
 
 /obj/effect/mob_spawn/human/scavenger
 	name = "long storage sleeper"
