@@ -63,8 +63,17 @@ var/list/floor_decals = list()
 	icon = 'icons/turf/wasteland.dmi'
 	icon_state = "desertcorner"
 
-// Eris stuff
+/obj/effect/floor_decal/gravel_edge
+	name = "gravel edge"
+	icon = 'icons/turf/gravel.dmi'
+	icon_state = "gravel_edge"
 
+/obj/effect/floor_decal/gravel_corner
+	name = "gravel corner"
+	icon = 'icons/turf/gravel.dmi'
+	icon_state = "gravel_corner"
+
+// Eris stuff
 
 /obj/effect/floor_decal/spline/plain
 	name = "spline - plain"

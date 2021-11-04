@@ -125,6 +125,26 @@ var/list/flooring_types
 /decl/flooring/proc/Entered(mob/living/M as mob)
 	return
 
+// Fallout Certified
+
+/decl/flooring/wasteland
+	name = "sand"
+	desc = "Coarse, gets everywhere."
+	icon = 'icons/turf/wasteland.dmi'
+	icon_base = "desertsmooth"
+	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
+	build_type = null
+
+/decl/flooring/gravel
+	name = "gravel"
+	desc = "Lots of stone pebbles."
+	icon = 'icons/turf/gravel.dmi'
+	icon_base = "gravel"
+	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
+	build_type = null
+
+// Other flooring
+
 /decl/flooring/grass
 	name = "grass"
 	desc = "Do they smoke grass out in space, Bowie? Or do they smoke AstroTurf?"
@@ -150,13 +170,7 @@ var/list/flooring_types
 	resistance = RESISTANCE_TOUGH
 	health = 9999999
 
-/decl/flooring/wasteland
-	name = "sand"
-	desc = "Coarse, gets everywhere."
-	icon = 'icons/turf/wasteland.dmi'
-	icon_base = "desertsmooth"
-	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
-	build_type = null
+
 
 /decl/flooring/asteroid
 	name = "coarse sand"
