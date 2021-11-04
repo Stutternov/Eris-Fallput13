@@ -225,7 +225,7 @@
  */
 /obj/structure/bed/roller
 	name = "roller bed"
-	icon = 'icons/obj/rollerbed.dmi'
+	icon = 'icons/obj/medical/rollerbed.dmi'
 	icon_state = "down"
 	anchored = FALSE
 	buckle_pixel_shift = "x=0;y=6"
@@ -250,7 +250,7 @@
 /obj/item/roller
 	name = "roller bed"
 	desc = "A collapsed roller bed that can be carried around."
-	icon = 'icons/obj/rollerbed.dmi'
+	icon = 'icons/obj/medical/rollerbed.dmi'
 	icon_state = "folded"
 	item_state = "rbed"
 	slot_flags = SLOT_BACK
@@ -290,7 +290,7 @@
 /obj/item/roller_holder
 	name = "roller bed rack"
 	desc = "A rack for carrying a collapsed roller bed."
-	icon = 'icons/obj/rollerbed.dmi'
+	icon = 'icons/obj/medical/rollerbed.dmi'
 	icon_state = "folded"
 	var/max_stored = 4
 	var/list/obj/item/roller/held = list()
