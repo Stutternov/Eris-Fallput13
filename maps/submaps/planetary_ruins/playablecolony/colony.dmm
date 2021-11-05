@@ -5996,7 +5996,6 @@
 "qF" = (
 /obj/effect/submap_landmark/spawnpoint/colonist_spawn,
 /obj/structure/bed/padded,
-/obj/item/bedsheet/hop,
 /obj/machinery/light/small{
 	icon_state = "bulb1";
 	dir = 8

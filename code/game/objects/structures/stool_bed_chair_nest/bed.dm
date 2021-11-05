@@ -10,7 +10,7 @@
 /obj/structure/bed
 	name = "bed"
 	desc = "This is used to lie in, sleep in or strap on."
-	icon = 'icons/obj/furniture.dmi'
+	icon = 'icons/obj/furniture/furniture.dmi'
 	icon_state = "bed"
 	anchored = TRUE
 	can_buckle = TRUE
@@ -53,7 +53,7 @@
 	// Base icon.
 	var/cache_key = "[base_icon]-[material.name]"
 	if(isnull(stool_cache[cache_key]))
-		var/image/I = image('icons/obj/furniture.dmi', base_icon)
+		var/image/I = image('icons/obj/furniture/furniture.dmi', base_icon)
 		if(applies_material_colour)
 			I.color = material.icon_colour
 		stool_cache[cache_key] = I
