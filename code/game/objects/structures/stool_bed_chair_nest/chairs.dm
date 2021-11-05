@@ -1,6 +1,7 @@
 /obj/structure/bed/chair	//YES, chairs are a type of bed, which are a type of stool. This works, believe me.	-Pete
 	name = "chair"
 	desc = "You sit in this. Either by will or force."
+	icon = 'icon/obj/furniture/chairs_and_beds.dmi'
 	icon_state = "chair_preview"
 	color = "#666666"
 	base_icon = "chair"
@@ -263,7 +264,6 @@
 	I.layer = FLY_LAYER
 	add_overlays(I)
 
-
 //wooden
 /obj/structure/bed/chair/custom/wood
 	name = "wooden chair"
@@ -277,12 +277,26 @@
 /obj/structure/bed/chair/custom/wood/wings
 	icon_state = "wooden_chair_wings"
 
+/obj/structure/bed/chair/custom/wood/settler
+	name = "rough wooden chair"
+	desc = "Crudely made chair."
+	icon_state = "wooden_chair_settler"
+
+//tribal throne
+/obj/structure/bed/chair/custom/throne
+	name = "tribal throne"
+	desc = "A massive chair from various animal parts and wood."
+	icon = 'icon/obj/furniture/throne.dmi'
+	icon_state = "onestar_chair_grey"
+
 
 //modern
 /obj/structure/bed/chair/custom/bar_special
 	name = "bar chair"
 	desc = "Modern design and soft pad. Served up with the drink and great company."
 	icon_state = "bar_chair"
+
+
 
 //onestar
 /obj/structure/bed/chair/custom/onestar
