@@ -2,9 +2,9 @@
 	name = ".44 Magnum \"Desert Eagle\""
 	desc = "An ancient Deasert Eagle pistol, chambered in .44 Magnum. Interest in late 20th century films made this weapon one of the most popular handguns of all times in the States. \
 			This gun packs a punch but is a bit clunky to use. Occasional jams or feed issues, high recoil and rare replacement parts."
-	icon = 'icons/obj/guns/projectile/deagle.dmi'
-	icon_state = "deagle"
-	item_state = "deagle"
+	icon = 'icons/obj/guns/projectile/avasarala.dmi'
+	icon_state = "avasarala"
+	item_state = "avasarala"
 	force = WEAPON_FORCE_PAINFUL
 	caliber = CAL_MAGNUM
 	load_method = MAGAZINE

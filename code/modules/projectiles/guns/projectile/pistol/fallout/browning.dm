@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/browning
 	name = "M&A 9mm Pistol"
 	desc = "A cheap and relatively common pistol chambered in 9mm. This pistol has become the staple of the NCR due to its common usage in pre-war police departments along the West Coast."
-	icon = 'icons/obj/guns/projectile/m&a.dmi'
+	icon = 'icons/obj/guns/projectile/browning.dmi'
 	icon_state = "m&a"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	matter = list(MATERIAL_PLASTEEL = 8, MATERIAL_WOOD = 4)
