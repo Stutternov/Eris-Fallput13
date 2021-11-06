@@ -1,6 +1,6 @@
 /*Fallout 13 armors. These are divided into 3 sections.
 
-There are three armor sub-catagories here. These will be arranged by their armor-class.
+There are three armor sub-catagories here, plus labcoats. These will be arranged by their armor-class.
 
 
 Light armor - Light armor should have low amounts of protection over-all besides possibly some extra melee protection over medium armor. These should have no slowdown or close to none.
@@ -8,20 +8,30 @@ Light armor - Light armor should have low amounts of protection over-all besides
 Medium armor - Medium armor should be 'faction standard' for combatants that are not scouts. These are the mid-grade armor for protection with a bit of slowdown.
 
 Heavy armor - Heavy armor should be limited to special finds or specialist classes in factions; such as a heavy trooper. These should have a higher amount of slowdown.
+Heavy armor is also the only armor to have the f13 subtype after its weight subtype, to use inheritance from sut/armor/heavy.
+
+Labcoats - Labcoats should generally have only bio protection, but it will be high. As they are clothing/suit/storage items, they have pockets.
 
 - This is SPECIFICALLY for loot and non-factions/outlaws. Factions should have their own files. For example, suits/f13bos.dm, suits/f13ncr.dm, etc.
 */
 
 
-//Light Armors
+//f13/light Armors
 
-/obj/item/clothing/suit/armor/leatherjacket
+obj/item/clothing/suit/armor/f13/light //Base f13 light armor type, for jackets and light armors. Does *not* cover lower torso by default, as a jacket does not go down that far.
+	body_parts_covered = UPPER_TORSO
+	item_flags = THICKMATERIAL|DRAG_AND_DROP_UNEQUIP
+	cold_protection = UPPER_TORSO
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = UPPER_TORSO
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/f13/light/leatherjacket
 	name = "leather jacket"
 	desc = "A leather jacket made of either brahmin or lizard skin. Or.. well, you hope that it's brahmin or lizard skin."
 	icon_state = "leather_jacket"
 	item_state = "leather_jacket"
 	blood_overlay_type = "armor"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
 		melee = 20,
 		bullet = 15,
@@ -35,13 +45,12 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		MTERIAL_CLOTH = 20
 	)
 
-/obj/item/clothing/suit/armor/armorkit
+/obj/item/clothing/suit/armor/f13/light/armorkit
 	name = "armor kit"
 	desc = "Separate armor parts you can wear over the clothing to get the most basic protection from the dangers of wasteland.<br>It is unable to reflect laser beams and probably won't shield you from a random bullet, but it sure is better than going into the battle without any armor at all."
 	icon_state = "armorkit"
 	item_state = "armorkit"
 	blood_overlay_type = "armor"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
 		melee = 25,
 		bullet = 10,
@@ -51,14 +60,14 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 0
 	)
 
-/obj/item/clothing/suit/armor/leathercombat
+/obj/item/clothing/suit/armor/f13/light/leathercombat
 	name = "combat leather jacket"
 	desc = "This leather jacket appears to sport heavier padding and possibly some reinforced sections. Making a fashion statement while ready to break some skulls."
 	icon_state = "combat_jacket"
 	item_state = "combat_jacket"
 	blood_overlay_type = "armor"
 	slowdown = 0.05
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS //Additional plating and intended for combat, so it covers lower body and arms adequately.
 	armor = list(
 		melee = 25,
 		bullet = 20,
@@ -73,7 +82,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		MTERIAL_CLOTH = 20
 	)
 
-/obj/item/clothing/suit/armor/leatherarmor
+/obj/item/clothing/suit/armor/f13/light/leatherarmor
 	name = "leather armor"
 	desc = "Your basic all leather apparel. Finely crafted from tanned brahmin hide."
 	icon_state = "leather_armor"
@@ -91,13 +100,18 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 
 
 
-//Medium Armors
+//f13/medium Armors
 
-/obj/item/clothing/suit/armor/leatherarmor/reinforced
+/obj/item/clothing/suit/armor/f13/medium //Base f13 medium armor type. Covers full body except for head.
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+
+/obj/item/clothing/suit/armor/f13/medium/leatherarmor/reinforced
 	name = "reinforced leather armor"
 	icon_state = "leather_armor_2"
 	item_state = "leather_armor_2"
-	slowdown = 0.1
+	slowdown = 0.15
 	armor = list(
 		melee = 30,
 		bullet = 30,
@@ -107,7 +121,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 0
 	)
 
-/obj/item/clothing/suit/armor/f13/metalarmor
+/obj/item/clothing/suit/armor/f13/medium/metalarmor
 	name = "metal armor"
 	desc = "A set of plates formed together to form a crude chestplate."
 	icon_state = "metal_armor"
@@ -123,7 +137,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 0
 	)
 
-/obj/item/clothing/suit/armor/f13/metalarmor/reinforced
+/obj/item/clothing/suit/armor/f13/medium/metalarmor/reinforced
 	name = "reinforced metal armor"
 	desc = "A set of polished plates formed together to provide effective protection."
 	icon_state = "metal_chestplate2"
@@ -139,7 +153,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 0
 	)
 
-/obj/item/clothing/suit/armor/f13/combat
+/obj/item/clothing/suit/armor/f13/medium/combat
 	name = "combat armor"
 	desc = "An old military grade pre war combat armor."
 	icon_state = "combat_armor"
@@ -155,7 +169,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 5
 	)
 
-/obj/item/clothing/suit/armor/f13/combat/raider
+/obj/item/clothing/suit/armor/f13/medium/combat/raider
 	name = "raider combat armor"
 	desc = "An old set of military grade combat armor that has been upgraded with spikes and extra torso plating to protect against bladed weapons.."
 	icon_state = "combat_armor"
@@ -171,7 +185,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 5
 	)
 
-/obj/item/clothing/suit/armor/f13/combat/mk2
+/obj/item/clothing/suit/armor/f13/medium/combat/mk2
 	name = "reinforced combat armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates."
 	icon_state = "combat_armor_mk2"
@@ -187,7 +201,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 10
 	)
 
-/obj/item/clothing/suit/armor/f13/combat/mk2/raider
+/obj/item/clothing/suit/armor/f13/medium/combat/mk2/raider
 	name = "reinforced raider armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates."
 	icon_state = "combat_armor_raider"
@@ -204,7 +218,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	)
 
 
-//Heavy Armors
+//Heavy Armors - To alter subtype as a whole, go to armor.dm
 
 /obj/item/clothing/suit/armor/heavy/f13/marine
 	name = "marine combat armor"
@@ -265,3 +279,26 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		bio = 80,
 		rad = 80
 	)
+
+// Labcoats
+
+/obj/item/clothing/suit/storage/toggle/labcoat/f13 //Base F13 labcoat. Mostly copied from labcoat.dm with name and description change
+	name = "pre-war labcoat"
+	desc = "A pre-war suit that protects against minor chemical spills and has pockets."
+	icon_state = "labcoat_open"
+	item_state = "labcoat"
+	icon_open = "labcoat_open"
+	icon_closed = "labcoat"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	armor = list(
+		melee = 0,
+		bullet = 0,
+		bomb = 0,
+		bio = 50,
+		bomb = 0,
+		bio = 0,
+		rad = 0
+	)
+	
+	
