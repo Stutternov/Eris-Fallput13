@@ -54,7 +54,7 @@
 	// Base icon.
 	var/cache_key = "[base_icon]-[material.name]"
 	if(isnull(stool_cache[cache_key]))
-		var/image/I = image('icons/obj/furniture/furniture.dmi', base_icon)
+		var/image/I = image('icons/obj/furniture/chairs_and_beds.dmi', base_icon)
 		if(applies_material_colour)
 			I.color = material.icon_colour
 		stool_cache[cache_key] = I
@@ -115,7 +115,7 @@
 	if(W.has_quality(QUALITY_BOLT_TURNING))
 		playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
 		dismantle()
-	else if(istype(W,/obj/item/stack))
+/*	else if(istype(W,/obj/item/stack))
 		if(padding_material)
 			to_chat(user, "\The [src] is already padded.")
 			return
@@ -149,6 +149,8 @@
 		to_chat(user, "You remove the padding from \the [src].")
 		playsound(src, 'sound/items/Wirecutter.ogg', 100, 1)
 		remove_padding()
+*/
+		return
 	else if(istype(W, /obj/item/grab))
 		var/obj/item/grab/G = W
 		var/mob/living/affecting = G.affecting
@@ -188,7 +190,7 @@
 			buckled_mob.forceMove(destination, special_event, (glide_size_override ? glide_size_override : glide_size))
 		else
 			unbuckle_mob()
-
+/* padding disabled
 /obj/structure/bed/proc/remove_padding()
 	if(padding_material)
 		padding_material.place_sheet(get_turf(src))
@@ -198,7 +200,7 @@
 /obj/structure/bed/proc/add_padding(var/padding_type)
 	padding_material = get_material_by_name(padding_type)
 	update_icon()
-
+*/
 /obj/structure/bed/proc/dismantle()
 	drop_materials(drop_location())
 	qdel(src)

@@ -49,7 +49,7 @@
 /*
 	var/cache_key = "[base_icon]-[material.name]-over"
 	if(isnull(stool_cache[cache_key]))
-		var/image/I = image('icons/obj/furniture/furniture.dmi', "[base_icon]_over")
+		var/image/I = image('icons/obj/furniture/chairs_and_beds.dmi', "[base_icon]_over")
 		I.color = material.icon_colour
 		I.layer = FLY_LAYER
 		stool_cache[cache_key] = I
