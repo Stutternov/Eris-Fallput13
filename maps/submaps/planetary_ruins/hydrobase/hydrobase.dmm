@@ -1481,7 +1481,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/obj/structure/bed/chair/office/light{
+/obj/structure/bed/chair/custom/office{
 	icon_state = "officechair_white_preview";
 	dir = 4
 	},
@@ -1599,7 +1599,7 @@
 /turf/simulated/floor/alium,
 /area/map_template/hydrobase/station/growA)
 "ei" = (
-/obj/structure/bed/chair/office/light{
+/obj/structure/bed/chair/custom/office{
 	icon_state = "officechair_white_preview";
 	dir = 1
 	},

@@ -169,6 +169,6 @@ var/global/list/stool_cache = list() //haha stool
 	return
 
 
-/obj/item/stool/custom/bar_special
+/obj/structure/bed/chair/custom/barstool
 	name = "bar stool"
 	icon_state = "bar_stool"

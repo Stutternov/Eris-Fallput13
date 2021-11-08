@@ -1057,7 +1057,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/centcom/evac)
 "do" = (
-/obj/structure/bed/chair/wood,
+/obj/structure/bed/chair/custom/wood,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/centcom/evac)
 "dp" = (
@@ -1252,7 +1252,7 @@
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_meetinghall)
 "dT" = (
-/obj/structure/bed/chair/wood{
+/obj/structure/bed/chair/custom/wood{
 	dir = 1;
 	icon_state = "wooden_chair"
 	},
@@ -4131,7 +4131,7 @@
 	},
 /area/centcom/raider_base)
 "ng" = (
-/obj/structure/bed/chair/wood/wings{
+/obj/structure/bed/chair/custom/wood{
 	dir = 4;
 	icon_state = "wooden_chair_wings"
 	},
@@ -4141,7 +4141,7 @@
 	},
 /area/wizard_station)
 "nj" = (
-/obj/structure/bed/chair/wood/wings{
+/obj/structure/bed/chair/custom/wood{
 	dir = 8;
 	icon_state = "wooden_chair_wings"
 	},
@@ -4305,7 +4305,6 @@
 	},
 /area/centcom/raider_base)
 "nO" = (
-/obj/item/xenos_claw,
 /turf/unsimulated/floor{
 	icon_state = "asteroid"
 	},

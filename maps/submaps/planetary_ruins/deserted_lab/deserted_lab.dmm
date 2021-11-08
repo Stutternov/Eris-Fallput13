@@ -101,7 +101,7 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/template_noop)
 "ax" = (
-/obj/structure/bed/chair/office/light,
+/obj/structure/bed/chair/custom/office,
 /obj/structure/closet/wall_mounted/emcloset,
 /turf/simulated/floor/tiled/white,
 /area/template_noop)
@@ -223,7 +223,7 @@
 /area/template_noop)
 "aU" = (
 /obj/spawner/junk,
-/obj/structure/bed/chair/office/light,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/carpet/blucarpet,
 /area/template_noop)
 "aV" = (

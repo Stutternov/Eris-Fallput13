@@ -10,7 +10,7 @@
 /obj/structure/bed
 	name = "bed"
 	desc = "This is used to lie in, sleep in or strap on."
-	icon = 'icons/obj/furniture/furniture.dmi'
+	icon = 'icons/obj/furniture/chairs_and_beds.dmi'
 	icon_state = "bed"
 	anchored = TRUE
 	can_buckle = TRUE
@@ -19,7 +19,7 @@
 	var/material/material
 	var/material/padding_material
 	var/base_icon = "bed"
-	var/applies_material_colour = 1
+	var/applies_material_colour = 0
 
 /obj/structure/bed/New(var/newloc, var/new_material, var/new_padding_material)
 	..(newloc)
@@ -45,6 +45,7 @@
 	if(padding_material)
 		LAZYAPLUS(., padding_material.name, 1)
 
+/* Commented out since not used with FO beds
 // Reuse the cache/code from stools, todo maybe unify.
 /obj/structure/bed/on_update_icon()
 	// Prep icon.
@@ -66,6 +67,7 @@
 			I.color = padding_material.icon_colour
 			stool_cache[padding_cache_key] = I
 		associate_with_overlays(stool_cache[padding_cache_key])
+*/
 
 	// Strings.
 	desc = initial(desc)
@@ -200,6 +202,54 @@
 /obj/structure/bed/proc/dismantle()
 	drop_materials(drop_location())
 	qdel(src)
+
+/obj/structure/bed/wooden
+	name = "bed"
+	desc = "Simple wooden bedframe and rustic mattress."
+	icon_state = "bed_wood"
+	base_icon = "bed_wood"
+
+/obj/structure/bed/dirty
+	name = "dirty bed"
+	desc = "Old, grimy bed."
+	icon_state = "bed_dirty"
+	base_icon = "bed_dirty"
+
+/obj/structure/bed/mattress
+	name = "mattress"
+	desc = "More or less clean mattress."
+	icon_state = "mattress0"
+	base_icon = "mattress0"
+
+/obj/structure/bed/mattress/simple
+	name = "mattress"
+	desc = "Mattress on the floor, no pillow."
+	icon_state = "mattress1"
+	base_icon = "mattress1"
+
+/obj/structure/bed/mattress/dirty
+	name = "dirty mattress"
+	desc = "Dirty mattress."
+	icon_state = "mattress2"
+	base_icon = "mattress2"
+
+/obj/structure/bed/mattress/bloody
+	name = "bloody mattress"
+	desc = "Bloody mattress."
+	icon_state = "mattress3"
+	base_icon = "mattress3"
+
+/obj/structure/bed/mattress/bloodsoaked
+	name = "bloodsoaked mattress"
+	desc = "Bloody mattress."
+	icon_state = "mattress4"
+	base_icon = "mattress4"
+
+/obj/structure/bed/mattress/moldy
+	name = "moldy mattress"
+	desc = "Moldy mattress."
+	icon_state = "mattress5"
+	base_icon = "mattress5"
 
 /obj/structure/bed/psych
 	name = "psychiatrist's couch"
