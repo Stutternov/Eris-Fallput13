@@ -3,7 +3,7 @@
 	name = "prisoner containment sleeper"
 	desc = "A sleeper designed to put its occupant into a deep coma, unbreakable until the sleeper turns off. This one's glass is cracked and you can see a pale, sleeping face staring out."
 	mob_name = "an escaped prisoner"
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/medical/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
 	outfit = /decl/hierarchy/outfit/escapedprisoner
 	short_desc = "You're a prisoner, sentenced to hard work in one of Ironhammer's labor camps, but it seems as \
@@ -40,7 +40,7 @@
 	name = "long storage sleeper"
 	desc = "An old sleeper, with an unconscious body inside. The occupant seems to be covered in armor."
 	mob_name = "a scavenger"
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/medical/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
 	outfit = /decl/hierarchy/outfit/scavenger
 	short_desc = "You're a scavenger, who barely even owns the clothes on your back and the rifle in your hands."
@@ -65,7 +65,7 @@
 	name = "modified storage sleeper"
 	desc = "An old sleeper, with a sleeping body inside. The sleeper seems to have been gutted and padded into a bed."
 	mob_name = "a hermit"
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/medical/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
 	outfit = /decl/hierarchy/outfit/hermit
 	short_desc = "You're a castaway, stuck on this rock looking for a way out."

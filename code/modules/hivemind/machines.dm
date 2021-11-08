@@ -314,7 +314,7 @@
 	desc = "Its cold eye seeks to dominate what it surveys."
 	icon_state = "core"
 //	desc = "This Pickle, aside from being attached to several wires, is releasing grey ooze from its many wounds."
-//	icon = 'icons/obj/food.dmi'
+//	icon = 'icons/obj/food/food.dmi'
 //	icon_state = "pickle"
 //	When Hope Is Gone Undo This Lock And Send Me Forth On A Moonlit Walk. inotherwordsimgonnadoitagain
 	max_health = 420

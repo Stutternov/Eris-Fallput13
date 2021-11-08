@@ -6021,7 +6021,6 @@
 /area/centcom/merc_base)
 "Ue" = (
 /obj/structure/bed,
-/obj/item/bedsheet/rainbow,
 /turf/simulated/shuttle/floor{
 	icon_state = "floor4"
 	},
