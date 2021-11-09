@@ -170,6 +170,28 @@
 	Base Unit Subtypes
 */
 
+/obj/item/device/defib_kit/primitive
+	name = "primitive defibrillator"
+	desc = "A chemical battery hooked to clamps, to shock patients to life for the budget-minded doctor."
+	icon = 'icons/obj/medical/primitivedefib.dmi'
+	icon_state = "defib_crude"
+	item_state = "defibunit"
+	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 4)
+	origin_tech = list(TECH_BIO = 2, TECH_POWER = 1)
+	action_button_name = "Remove/Replace clamps"
+	oxygain = 40
+	suitable_cell = null
+	paddles = /obj/item/shockpaddles/linked/primitive
+	var/spawn_charged = 1
+	var/maxcharge = CELL_LARGE_BASE_CHARGE
+
+/obj/item/shockpaddles/linked/primitive
+	name = "battery clamps"
+	desc = "A pair of metal clamps, connected to electrical wire."
+	icon = 'icons/obj/medical/primitivedefib.dmi'
+	icon_state = "defib_crudepaddles"
+	item_state = "defibpaddles"
+
 /obj/item/device/defib_kit/compact
 	name = "compact defibrillator"
 	desc = "A belt-equipped defibrillator that can be rapidly deployed."
