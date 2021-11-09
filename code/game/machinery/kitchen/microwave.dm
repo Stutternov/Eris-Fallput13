@@ -449,23 +449,23 @@
 /obj/machinery/microwave/campfire/abort()
 	..()
 	playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-		icon_state = "burnbarrel-fire"
+	icon_state = "burnbarrel"
 
 /obj/machinery/microwave/campfire/stop()
 	..()
 	playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-		icon_state = "burnbarrel-fire"
+	icon_state = "burnbarrel"
 
 /obj/machinery/microwave/campfire/dispose()
 	..()
 	playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-		icon_state = "burnbarrel-fire"
+	icon_state = "burnbarrel-fire"
 
 /obj/machinery/microwave/campfire/muck_start()
 	..()
-		icon_state = "burnbarrel-fire"
+	icon_state = "burnbarrel-fire"
 
 /obj/machinery/microwave/campfire/muck_finish()
 	..()
 	playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-		icon_state = "burnbarrel-fire"
+	icon_state = "burnbarrel"

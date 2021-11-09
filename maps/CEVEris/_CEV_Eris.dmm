@@ -3103,7 +3103,7 @@
 "biK" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/plating/under,/area/eris/maintenance/section2deck4central)
 "biL" = (/obj/structure/bed/chair{dir = 4},/obj/structure/window/reinforced{dir = 4},/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled/steel/bluecorner,/area/eris/command/courtroom)
 "biM" = (/obj/structure/bed/chair{dir = 4},/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/steel/bluecorner,/area/eris/command/courtroom)
-"biN" = (/obj/structure/reagent_dispensers/virusfood{pixel_y = 32},/turf/simulated/floor/tiled/white,/area/eris/medical/virology)
+"biN" = (/turf/simulated/floor/tiled/white,/area/eris/medical/virology)
 "biO" = (/obj/structure/closet/wardrobe/virology_white,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/white,/area/eris/medical/virology)
 "biP" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/access_button{command = "cycle_exterior"; frequency = 1379; master_tag = "virology_airlock_control"; name = "Virology Access Button"; pixel_x = -24; req_access = list(39)},/turf/simulated/floor/tiled/dark,/area/eris/hallway/side/morguehallway)
 "biQ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled/dark,/area/eris/hallway/side/morguehallway)
