@@ -10,5 +10,5 @@
 		/datum/design/autolathe/tool/combi_driver_onestar,
 		/datum/design/autolathe/tool/jackhammer_onestar,
 		/datum/design/autolathe/tool/drill_onestar,
-		/datum/design/autolathe/tool/weldertool_onestar
+
 	)
