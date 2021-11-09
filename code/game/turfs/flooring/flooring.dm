@@ -135,6 +135,18 @@ var/list/flooring_types
 	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
 	build_type = null
 
+/decl/flooring/wasteland/coarse
+	icon_base = "desertcoarse"
+
+/decl/flooring/wasteland/coarse2
+	icon_base = "desertcoarse2"
+
+/decl/flooring/wasteland/rough
+	icon_base = "desertrough"
+
+/decl/flooring/wasteland/cracked
+	icon_base = "desertcracked"
+
 /decl/flooring/gravel
 	name = "gravel"
 	desc = "Lots of stone pebbles."
@@ -142,6 +154,25 @@ var/list/flooring_types
 	icon_base = "gravel"
 	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
 	build_type = null
+
+/decl/flooring/gravel/alt
+	icon_base = "gravel_alt"
+
+/decl/flooring/gravel/desertmerge
+	icon_base = "desertmerge"
+
+/decl/flooring/gravel/dirtmerge
+	icon_base = "dirtmerge"
+
+/decl/flooring/gravel/path
+	icon_base = "path_dirt"
+
+/decl/flooring/gravel/intersection
+	icon_base = "path_dirt_intersection"
+
+/decl/flooring/gravel/end
+	icon_base = "path_dirt_end"
+
 
 // Other flooring
 
