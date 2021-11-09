@@ -8,11 +8,11 @@
 	buckle_lying = 0 //force people to sit up in chairs when buckled
 	applies_material_colour = 0
 	var/propelled = 0 // Check for fire-extinguisher-driven chairs
-
+/*
 /obj/structure/bed/sofa/New()
 	..()
 	update_layer()
-
+*/
 /obj/structure/bed/sofa/attackby(obj/item/W as obj, mob/user as mob)
 	..()
 	if(!padding_material && istype(W, /obj/item/assembly/shock_kit))
@@ -33,17 +33,26 @@
 		user.drop_item()
 		W.loc = get_turf(src)
 
+// Point is to make the icon be behind mob when walking around but look proper when sitting
 /obj/structure/bed/sofa/post_buckle_mob()
 	update_icon()
 
 /obj/structure/bed/sofa/on_update_icon()
 	..()
-
+	var/image/I = image(icon, "[icon_state]_over")
+	I.layer = FLY_LAYER
+	add_overlays(I) //from
+/*
 /obj/structure/bed/sofa/proc/update_layer()
 	if(src.dir == NORTH)
 		layer = ABOVE_MOB_LAYER
 	else
 		layer = OBJ_LAYER
+
+/obj/structure/bed/sofa/office/New()
+	..()
+*/
+
 
 // Sofas
 /obj/structure/bed/sofa/end_left

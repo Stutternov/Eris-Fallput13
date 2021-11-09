@@ -46,7 +46,7 @@
 /obj/structure/bed/chair/on_update_icon()
 	..()
 
-/*
+
 	var/cache_key = "[base_icon]-[material.name]-over"
 	if(isnull(stool_cache[cache_key]))
 		var/image/I = image('icons/obj/furniture/chairs_and_beds.dmi', "[base_icon]_over")
@@ -54,8 +54,8 @@
 		I.layer = FLY_LAYER
 		stool_cache[cache_key] = I
 	associate_with_overlays(stool_cache[cache_key])
-*/
-	// Padding overlay.
+
+/*	// Padding overlay.
 	if(padding_material)
 		var/padding_cache_key = "[base_icon]-padding-[padding_material.name]-over"
 		if(isnull(stool_cache[padding_cache_key]))
@@ -73,7 +73,7 @@
 			I.color = padding_material.icon_colour
 			stool_cache[cache_key] = I
 		associate_with_overlays(stool_cache[cache_key])
-
+*/
 /obj/structure/bed/chair/proc/update_layer()
 	if(src.dir == NORTH)
 		layer = ABOVE_MOB_LAYER
