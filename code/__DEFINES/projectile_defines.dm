@@ -16,7 +16,6 @@
 #define CAL_LRIFLE "7.62"
 #define CAL_ANTIM ".50 MG"
 #define CAL_SHOTGUN "12 Gauge Shell"
-#define CAL_70 ".70"
 
 //Misc
 #define CAL_CAP "plastic cap"

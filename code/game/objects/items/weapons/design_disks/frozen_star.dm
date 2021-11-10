@@ -19,9 +19,7 @@
 		//magnum smg mags
 		/datum/design/autolathe/ammo/msmg/rubber,
 		//rifles
-		/datum/design/autolathe/ammo/srifle/rubber,
 		/datum/design/autolathe/ammo/ihclrifle/rubber,
-		/datum/design/autolathe/ammo/lrifle/rubber,
 		//shells
 		/datum/design/autolathe/ammo/shotgun_blanks,
 		/datum/design/autolathe/ammo/shotgun_beanbag,
@@ -87,7 +85,6 @@
 		/datum/design/autolathe/ammo/clrifle_ammobox/rubber,
 		/datum/design/autolathe/ammo/lrifle_ammobox_small,
 		/datum/design/autolathe/ammo/lrifle_ammobox_small/practice = 0,
-		/datum/design/autolathe/ammo/lrifle_ammobox_small/rubber,
 		/datum/design/autolathe/ammo/lrifle_ammobox,
 	)
 
@@ -338,8 +335,7 @@
 	designs = list(
 		/datum/design/autolathe/gun/z8 = 3, // "FS CAR .20 \"Z8 Bulldog\""
 		/datum/design/autolathe/ammo/srifle,
-		/datum/design/autolathe/ammo/srifle/practice = 0,
-		/datum/design/autolathe/ammo/srifle/rubber,
+		/datum/design/autolathe/ammo/srifle/practice = 0
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/fs_wintermute
@@ -351,8 +347,7 @@
 	designs = list(
 		/datum/design/autolathe/gun/wintermute = 3, // "FS BR .20 \"Wintermute\""
 		/datum/design/autolathe/ammo/srifle,
-		/datum/design/autolathe/ammo/srifle/practice = 0,
-		/datum/design/autolathe/ammo/srifle/rubber,
+		/datum/design/autolathe/ammo/srifle/practice = 0
 	)
 
 // .25 Caseless
@@ -379,8 +374,7 @@
 
 		/datum/design/autolathe/gun/ak47_fs = 3, // "FS AR .30 \"Vipr\""
 		/datum/design/autolathe/ammo/lrifle,
-		/datum/design/autolathe/ammo/lrifle/practice = 0,
-		/datum/design/autolathe/ammo/lrifle/rubber,
+		/datum/design/autolathe/ammo/lrifle/practice = 0
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/fs_kalashnikov_ih
@@ -392,8 +386,7 @@
 	designs = list(
 		/datum/design/autolathe/gun/ak47_fs_ih = 3, // "FS AR .30 \"Venger\""
 		/datum/design/autolathe/ammo/lrifle,
-		/datum/design/autolathe/ammo/lrifle/practice = 0,
-		/datum/design/autolathe/ammo/lrifle/rubber,
+		/datum/design/autolathe/ammo/lrifle/practice = 0
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/fs_lenar

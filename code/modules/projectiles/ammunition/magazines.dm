@@ -95,7 +95,7 @@
 	mag_well = MAG_WELL_PISTOL
 	matter = list(MATERIAL_STEEL = 3)
 	caliber = CAL_HPISTOL
-	ammo_type = /obj/item/ammo_casing/pistol
+	ammo_type = /obj/item/ammo_casing/hpistol
 	max_ammo = 12
 	multiple_sprites = 1
 
@@ -569,7 +569,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_MINI
 	matter = list(MATERIAL_STEEL = 5)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/rifle_5mm
 	max_ammo = 48
 	multiple_sprites = 1
 
@@ -579,7 +579,7 @@
 /obj/item/ammo_magazine/rifle_5mm/practice
 	name = "5mm magazine (practice)"
 	icon_state = "lrifle_p"
-	ammo_type = /obj/item/ammo_casing/lrifle/practice
+	ammo_type = /obj/item/ammo_casing/rifle_5mm/practice
 
 /obj/item/ammo_magazine/rifle_5mm/short
 	name = "5mm magazine"
@@ -588,7 +588,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_MINI
 	matter = list(MATERIAL_STEEL = 5)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/rifle_5mm
 	max_ammo = 24
 	multiple_sprites = 1
 
@@ -598,7 +598,7 @@
 /obj/item/ammo_magazine/rifle_5mm/short/practice
 	name = "5mm magazine (practice)"
 	icon_state = "lrifle_p"
-	ammo_type = /obj/item/ammo_casing/lrifle/practice
+	ammo_type = /obj/item/ammo_casing/rifle_5mm/practice
 
 
 ///////////// 5.56 /////////////
@@ -611,7 +611,7 @@
 	mag_well = MAG_WELL_BOX
 	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_STEEL = 8)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/srifle
 	max_ammo = 50
 	multiple_sprites = 1
 
@@ -626,7 +626,7 @@
 	mag_well = MAG_WELL_BOX
 	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_STEEL = 8)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/srifle
 	max_ammo = 80
 	multiple_sprites = 1
 	w_class = ITEM_SIZE_NORMAL
@@ -655,7 +655,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_STEEL = 5)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/srifle
 	max_ammo = 20
 	multiple_sprites = 1
 
@@ -666,17 +666,12 @@
 /obj/item/ammo_magazine/srifle/short/practice
 	name = "5.56 magazine (practice)"
 	icon_state = "lrifle_p"
-	ammo_type = /obj/item/ammo_casing/lrifle/practice
+	ammo_type = /obj/item/ammo_casing/srifle/practice
 
 /obj/item/ammo_magazine/srifle/short/highvelocity
 	name = "5.56 magazine (high-velocity)"
 	icon_state = "lrifle_hv"
-	ammo_type = /obj/item/ammo_casing/lrifle/hv
-
-/obj/item/ammo_magazine/srifle/short/rubber
-	name = "5.56 magazine (rubber)"
-	icon_state = "lrifle_r"
-	ammo_type = /obj/item/ammo_casing/lrifle/rubber
+	ammo_type = /obj/item/ammo_casing/srifle/hv
 
 /obj/item/ammo_magazine/srifle
 	name = "5.56 magazine"
@@ -685,7 +680,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_SRIFLE
 	matter = list(MATERIAL_STEEL = 5)
-	ammo_type = /obj/item/ammo_casing/lrifle
+	ammo_type = /obj/item/ammo_casing/srifle
 	max_ammo = 30
 	multiple_sprites = 1
 
@@ -696,17 +691,12 @@
 /obj/item/ammo_magazine/srifle/practice
 	name = "5.56 magazine (practice)"
 	icon_state = "lrifle_p"
-	ammo_type = /obj/item/ammo_casing/lrifle/practice
+	ammo_type = /obj/item/ammo_casing/srifle/practice
 
 /obj/item/ammo_magazine/srifle/highvelocity
 	name = "5.56 magazine (high-velocity)"
 	icon_state = "lrifle_hv"
-	ammo_type = /obj/item/ammo_casing/lrifle/hv
-
-/obj/item/ammo_magazine/srifle/rubber
-	name = "5.56 magazine (rubber)"
-	icon_state = "lrifle_r"
-	ammo_type = /obj/item/ammo_casing/lrifle/rubber
+	ammo_type = /obj/item/ammo_casing/srifle/hv
 
 /obj/item/ammo_magazine/srifle/scrap
 	name = "magazine (old .20 Rifle)"
@@ -796,11 +786,6 @@
 	icon_state = "lrifle_hv"
 	ammo_type = /obj/item/ammo_casing/lrifle/hv
 
-/obj/item/ammo_magazine/lrifle/rubber
-	name = "7.62 magazine (rubber)"
-	icon_state = "lrifle_r"
-	ammo_type = /obj/item/ammo_casing/lrifle/rubber
-
 /obj/item/ammo_magazine/lrifle/scrap
 	name = "7.62 magazine (old)"
 	icon_state = "lrifle_r"
@@ -831,11 +816,6 @@
 	icon_state = "lrifle_hv"
 	ammo_type = /obj/item/ammo_casing/lrifle/hv
 
-/obj/item/ammo_magazine/lrifle/short/rubber
-	name = "7.62 short magazine (rubber)"
-	icon_state = "lrifle_r"
-	ammo_type = /obj/item/ammo_casing/lrifle/rubber
-
 /obj/item/ammo_magazine/maxim
 	name = "pan magazine"
 	icon_state = "maxim_l"
@@ -847,12 +827,6 @@
 	max_ammo = 96
 	multiple_sprites = 1
 	ammo_color = "-l"
-
-/obj/item/ammo_magazine/maxim/rubber
-	name = "pan magazine (rubber)"
-	icon_state = "maxim_r"
-	ammo_type = /obj/item/ammo_casing/lrifle/rubber
-	ammo_color = "-r"
 
 /////////////// .50 Cal ///////////////
 
@@ -895,7 +869,7 @@
 	icon = 'icons/obj/ammo_speed.dmi'
 	caliber = CAL_HPISTOL
 	matter = list(MATERIAL_STEEL = 3)
-	ammo_type = /obj/item/ammo_casing/pistol
+	ammo_type = /obj/item/ammo_casing/hpistol
 	max_ammo = 12
 	multiple_sprites = 1
 	rarity_value = 6.66
@@ -907,24 +881,24 @@
 /obj/item/ammo_magazine/slpistol/practice
 	name = "10mm speed loader (practice)"
 	icon_state = "slpistol_p"
-	ammo_type = /obj/item/ammo_casing/pistol/practice
+	ammo_type = /obj/item/ammo_casing/hpistol/practice
 
 /obj/item/ammo_magazine/slpistol/hv
 	name = "10mm speed loader (high-velocity)"
 	icon_state = "slpistol_hv"
-	ammo_type = /obj/item/ammo_casing/pistol/hv
+	ammo_type = /obj/item/ammo_casing/hpistol/hv
 	rarity_value = 80
 
 /obj/item/ammo_magazine/slpistol/rubber
 	name = "10mm speed loader (rubber)"
 	icon_state = "slpistol_r"
-	ammo_type = /obj/item/ammo_casing/pistol/rubber
+	ammo_type = /obj/item/ammo_casing/hpistol/rubber
 	rarity_value = 5
 
 /obj/item/ammo_magazine/slpistol/scrap
 	name = "10mm speed loader (old)"
 	icon_state = "slpistol_s"
-	ammo_type = /obj/item/ammo_casing/pistol/scrap
+	ammo_type = /obj/item/ammo_casing/hpistol/scrap
 	rarity_value = 5
 	spawn_tags = SPAWN_AMMO_COMMON
 
@@ -935,7 +909,7 @@
 	icon_state = "slmagnum_l"
 	icon = 'icons/obj/ammo_speed.dmi'
 	caliber = CAL_357
-	ammo_type = /obj/item/ammo_casing/magnum
+	ammo_type = /obj/item/ammo_casing/revolver
 	matter = list(MATERIAL_STEEL = 3)
 	max_ammo = 6
 	multiple_sprites = 1
@@ -949,19 +923,14 @@
 /obj/item/ammo_magazine/speed357/practice
 	name = ".357 speed loader (practice)"
 	icon_state = "slmagnum_p"
-	ammo_type = /obj/item/ammo_casing/magnum/practice
+	ammo_type = /obj/item/ammo_casing/revolver/practice
 	spawn_tags = null
 
 /obj/item/ammo_magazine/speed357/highvelocity
 	name = ".357 speed loader (high-velocity)"
 	icon_state = "slmagnum_hv"
-	ammo_type = /obj/item/ammo_casing/magnum/hv
+	ammo_type = /obj/item/ammo_casing/revolver/hv
 	spawn_tags = null
-
-/obj/item/ammo_magazine/speed357/rubber
-	name = ".357 speed loader (rubber)"
-	icon_state = "slmagnum_r"
-	ammo_type = /obj/item/ammo_casing/magnum/rubber
 
 //////// .44 SPEEDLOADERS //////////
 
@@ -1004,6 +973,30 @@
 	ammo_type = /obj/item/ammo_casing/magnum/scrap
 	spawn_tags = SPAWN_AMMO_COMMON
 
+//////// .45-70 SPEEDLOADERS //////////
+
+/obj/item/ammo_magazine/govt
+	name = "government speed loader"
+	icon_state = "slmagnum_l"
+	icon = 'icons/obj/ammo_speed.dmi'
+	caliber = CAL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/govt
+	matter = list(MATERIAL_STEEL = 3)
+	max_ammo = 6
+	multiple_sprites = 1
+	spawn_tags = SPAWN_TAG_AMMO_IH
+	rarity_value = 5
+
+/obj/item/ammo_magazine/govt/empty
+	icon_state = "slmagnum"
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/govt/practice
+	name = "government speed loader (practice)"
+	icon_state = "slmagnum_p"
+	ammo_type = /obj/item/ammo_casing/govt/practice
+	spawn_tags = null
+
 //////// 7.62 RIFLE SPEEDLOADERS ////////
 /obj/item/ammo_magazine/sllrifle
 	name = "ammo strip"
@@ -1038,23 +1031,6 @@
 	matter = list(MATERIAL_STEEL = 2)
 	max_ammo = 7
 	multiple_sprites = 1
-
-/obj/item/ammo_magazine/a75
-	name = "ammo magazine (.70 Gyro)"
-	icon_state = "gyropistol"
-	icon = 'icons/obj/ammo_mags.dmi'
-	mag_type = MAGAZINE
-	mag_well = MAG_WELL_PISTOL
-	caliber = CAL_70
-	ammo_type = /obj/item/ammo_casing/a75
-	multiple_sprites = 1
-	max_ammo = 4
-	rarity_value = 100
-	spawn_blacklisted = TRUE
-
-/obj/item/ammo_magazine/a75/empty
-	initial_ammo = 0
-	icon_state = "gyropistol-0"
 
 ////////////Shotguns!////////////
 

@@ -7,7 +7,7 @@
 	caliber = CAL_45ACP
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 6
-	ammo_type = /obj/item/ammo_casing/pistol_45
+	ammo_type = /obj/item/ammo_casing/pistol45
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 6)
 	price_tag = 500
 	damage_multiplier = 1.5

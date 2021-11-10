@@ -6,7 +6,7 @@
 	caliber = CAL_HPISTOL
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 12
-	ammo_type = /obj/item/ammo_casing/pistol_10mm
+	ammo_type = /obj/item/ammo_casing/hpistol
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 6)
 	price_tag = 400
 	damage_multiplier = 1.2

@@ -6,7 +6,7 @@
 	caliber = CAL_357
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 6
-	ammo_type = /obj/item/ammo_casing/pistol_357
+	ammo_type = /obj/item/ammo_casing/revolver
 	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 6)
 	price_tag = 600
 	damage_multiplier = 1.3
@@ -22,7 +22,7 @@
 	caliber = CAL_357
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 6
-	ammo_type = /obj/item/ammo_casing/pistol_357
+	ammo_type = /obj/item/ammo_casing/revolver
 	matter = list(MATERIAL_PLASTEEL = 8, MATERIAL_WOOD = 4)
 	price_tag = 500
 	damage_multiplier = 1.4
