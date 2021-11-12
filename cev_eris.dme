@@ -2823,5 +2823,8 @@
 #include "maps\submaps\planetary_ruins\radshrine\radshrine.dm"
 #include "maps\submaps\planetary_ruins\tar_anomaly\tar_anomaly.dm"
 #include "modular_fallput\ammobench.dm"
+#include "modular_fallput\chemicals.dm"
+#include "modular_fallput\chemicals_pills.dm"
+#include "modular_fallput\chemicals_syringes.dm"
 #include "modular_fallput\pixelshift.dm"
 // END_INCLUDE
