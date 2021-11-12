@@ -1,4 +1,4 @@
-/obj/item/gun/projectile/dks
+/obj/item/gun/projectile/automatic/dks
 	name = "\"DKS-501\" Sniper Rifle"
 	desc = "The DKS-501 Sniper Rifle is a staple sniper rifle designed for the U.S Military prior to the Great War. \
 			This 7.62 sniper sports a state of the art scope, a superior polymer stock and a robust design in its ported barrel. \

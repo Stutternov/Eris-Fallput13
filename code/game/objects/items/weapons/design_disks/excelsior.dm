@@ -62,7 +62,6 @@
 		/datum/design/autolathe/ammo/magnum_ammobox/rubber,
 		/datum/design/autolathe/ammo/srifle,						//vintorez ammo
 		/datum/design/autolathe/ammo/srifle_ammobox,
-		/datum/design/autolathe/ammo/srifle_ammobox/rubber,
 		/datum/design/autolathe/ammo/sl_lrifle,						//boltgun ammo
 		/datum/design/autolathe/ammo/lrifle_ammobox_small,
 		/datum/design/autolathe/ammo/lrifle,						//AK ammo

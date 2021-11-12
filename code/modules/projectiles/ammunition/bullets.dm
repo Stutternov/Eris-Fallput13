@@ -297,7 +297,7 @@
 
 //// 12.7mm ////
 
-/obj/item/ammo_casing/govt
+/obj/item/ammo_casing/bpistol
 	desc = "A 12.7mm bullet casing."
 	icon_state = "magnum_c_l"
 	spent_icon = "magnum_c_l-spent"
@@ -309,7 +309,7 @@
 	sprite_max_rotate = 32
 	sprite_scale = 0.6
 
-/obj/item/ammo_casing/govt/practice
+/obj/item/ammo_casing/bpistol/practice
 	desc = "A 12.7mm practice bullet casing."
 	icon_state = "magnum_c_p"
 	spent_icon = "magnum_c_p-spent"

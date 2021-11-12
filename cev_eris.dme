@@ -2425,6 +2425,8 @@
 #include "code\modules\projectiles\guns\projectile\battle_rifle\fallout\enfield.dm"
 #include "code\modules\projectiles\guns\projectile\battle_rifle\fallout\gauss.dm"
 #include "code\modules\projectiles\guns\projectile\battle_rifle\fallout\hunting.dm"
+#include "code\modules\projectiles\guns\projectile\battle_rifle\fallout\lever.dm"
+#include "code\modules\projectiles\guns\projectile\battle_rifle\fallout\m1garand.dm"
 #include "code\modules\projectiles\guns\projectile\battle_rifle\fallout\rangemaster.dm"
 #include "code\modules\projectiles\guns\projectile\battle_rifle\fallout\varmint.dm"
 #include "code\modules\projectiles\guns\projectile\other\RPG.dm"

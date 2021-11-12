@@ -722,6 +722,17 @@
 /obj/item/ammo_magazine/lrifle/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/enblock
+	name = "7.62 enblock clip"
+	icon_state = "enblock"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	mag_well = MAG_WELL_RIFLE
+	caliber = CAL_LRIFLE
+	matter = list(MATERIAL_STEEL = 5)
+	ammo_type = /obj/item/ammo_casing/lrifle
+	max_ammo = 8
+
 /obj/item/ammo_magazine/lrifle/pk
 	name = "7.62 LMG munitions box"
 	icon_state = "pk_box"

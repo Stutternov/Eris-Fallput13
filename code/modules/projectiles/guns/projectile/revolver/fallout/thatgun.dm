@@ -1,9 +1,9 @@
 /obj/item/gun/projectile/revolver/thatgun
-	name = "5.56 Revolver"
+	name = ".223 revolver"
 	desc = "Chambered in 5.56 this revolver is iconic across New California. Who made them or when they were made is a relative mystery. \
 			The ability of using a rifle round with a good penetration into a concealable pistol has been a favorite among elites in the NCR to even veteran caravaneers."
-	icon = 'icons/obj/guns/projectile/thatgun.dmi'
-	icon_state = "thatgun"
+	icon = 'icons/obj/guns/projectile/deckard.dmi'
+	icon_state = "deckard"
 	caliber = CAL_SRIFLE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 6
