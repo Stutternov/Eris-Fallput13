@@ -2,7 +2,7 @@
 	name = ".45 \"Autoloader\" Pistol"
 	desc = "The .45 \"Autoloader\" pistol comes from unkown origins. A incredibly rare find it appeares as if this weapon was found among elite teams of police and the United States Marines. \
 			This weapon was possibly a replacement for the M1911 - and it shows! It can take higher capacity mags and managaes to compensate for the guns recoil better than the dated M1911."
-	icon = 'icons/obj/guns/projectile/colt.dmi'
+	icon = 'icons/obj/guns/projectile/m1911.dmi'
 	icon_state = "autoloader"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6)

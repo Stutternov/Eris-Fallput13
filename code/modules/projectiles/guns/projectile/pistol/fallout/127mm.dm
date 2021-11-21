@@ -2,7 +2,7 @@
 	name = "12.7mm Sig Sauer Pistol"
 	desc = "The 12.7 Sig Sauer auto pistol is based off the 14mm Sig design but with even more quality of life improvements made to it. \
 			This pistol is an incredibly rare find, usually considered a pocket-canon by most people who use it. It's more compact than its 14mm counterpart; fitting into holsters comfortably."
-	icon = 'icons/obj/guns/projectile/colt.dmi'
+	icon = 'icons/obj/guns/projectile/127mm.dmi'
 	icon_state = "127mm"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	matter = list(MATERIAL_PLASTEEL = 16, MATERIAL_WOOD = 4)

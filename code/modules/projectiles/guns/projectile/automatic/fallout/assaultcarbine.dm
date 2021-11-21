@@ -32,6 +32,27 @@
 		SEMI_AUTO_NODELAY,
 		)
 
+/obj/item/gun/projectile/automatic/assaultcarbine/on_update_icon()
+	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if (ammo_magazine)
+		iconstring += "[ammo_magazine? "_mag[ammo_magazine.max_ammo]": ""]"
+		itemstring += "_full"
+
+	if(wielded)
+		itemstring += "_doble"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
+
+
+/obj/item/weapon/gun/projectile/automatic/assaultcarbine/Initialize()
+	. = ..()
+	update_icon()
+
 /obj/item/gun/projectile/automatic/assaultcarbine/marksman
 	name = "\"Colt\" Marksman Rifle"
 	desc = "The Colt Marksman Rifle, also branded as the \"All American\" Rifle, is a modified civilian version of the Colt Assault Carbine made for home defense, hunting and self defense. \

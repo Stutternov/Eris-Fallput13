@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/n99
 	name = "Colt \"N99\" 10mm Pistol"
 	desc = "The Colt N99 pistol was standard issue to all Vault Tech personnel before the Great War. The N99 originally was intended to replace Colt .45s across the U.S, but for some reason, the project failed."
-	icon = 'icons/obj/guns/projectile/lamia.dmi'
+	icon = 'icons/obj/guns/projectile/n99.dmi'
 	icon_state = "n99"
 	item_state = "pistol"
 	fire_sound = 'sound/weapons/guns/fire/hpistol_fire.ogg'
@@ -26,6 +26,9 @@
 
 	var/iconstring = initial(icon_state)
 	var/itemstring = ""
+
+	if (ammo_magazine)
+		iconstring += "_mag"
 
 	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
 		iconstring += "_slide"

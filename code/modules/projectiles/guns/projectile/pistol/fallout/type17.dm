@@ -2,7 +2,7 @@
 	name = "10mm \"Shanxi\" Type-19"
 	desc = "The Type-17, also known as the \"Shanxi\" due to its region of production, was the standard issue pistol of the People's Liberation Army prior to the Great War. \
 			These pistols are rather rare finds and based on ancient designs that predate the PRC itself."
-	icon = 'icons/obj/guns/projectile/beretta.dmi'
+	icon = 'icons/obj/guns/projectile/type17.dmi'
 	icon_state = "sig"
 	item_state = "pistol"
 	fire_sound = 'sound/weapons/guns/fire/pistol_fire.ogg'

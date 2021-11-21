@@ -3,9 +3,9 @@
 	desc = "Common among military police prior to the Great War, the M1-NG Carbine is a 10mm conversion of the 7.62 M1 Carbine produced over a century before the war itself. \
 			This ancient design has maintained its prevelence due to the quanitity of these guns that can be found. \
 			It's 10mm conversion has suited it well due to the quanity of surplus 10mm found in the wastes."
-	icon = 'icons/obj/guns/projectile/assaultcarbine.dmi'
-	icon_state = "assault"
-	item_state = "assault"
+	icon = 'icons/obj/guns/projectile/carbine.dmi'
+	icon_state = "carbine"
+	item_state = "carbine"
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
 	caliber = CAL_HPISTOL
@@ -36,9 +36,10 @@
 	desc = "A rare find, typically from musuems or the occasion National Guard stockpile, the M1A3 Carbine is a sight to behold. \
 			This anicent rifle appears to be chambered in 7.62, allowing it to blow away its competition with its round caliber and its compact size. \
 			But god.. does thing thing kick.."
-	caliber = CAL_LRIFLE
-	mag_well = MAG_WELL_RIFLE
-	magazine_type = /obj/item/ammo_magazine/lrifle
+	icon_state = "foldcarb"
+	caliber = CAL_HPISTOL
+	mag_well = MAG_WELL_H_PISTOL
+	magazine_type = /obj/item/ammo_magazine/hpistol_10mm
 	price_tag = 500
 	recoil_buildup = 1.8
 	damage_multiplier = 1
@@ -49,9 +50,10 @@
 	name = "Ruger \"AC556F\""
 	desc = "The Ruger AC556F is a development of the Ruger Mini 14, a 5.56 mm assault rifle originally used only in police forces. \
 			This gun found its popularity among open civilian markets. A full-auto firemode makes this weapon a real crowd pleaser!"
+	icon_state = "ruger"
 	caliber = CAL_SRIFLE
 	mag_well = MAG_WELL_RIFLE
-	magazine_type = /obj/item/ammo_magazine/srifle
+	magazine_type = /obj/item/ammo_magazine/srifle/short
 	price_tag = 750
 	recoil_buildup = 1.6
 	damage_multiplier = 1.2
@@ -61,3 +63,27 @@
 		SEMI_AUTO_NODELAY,
 		FULL_AUTO_400
 		)
+
+/obj/item/gun/projectile/automatic/m1/on_update_icon()
+	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if (ammo_magazine)
+		iconstring += "[ammo_magazine? "_mag[ammo_magazine.max_ammo]": ""]"
+
+	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
+		iconstring += "_slide"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
+
+/obj/item/gun/projectile/automatic/sts35/Initialize()
+	. = ..()
+	update_icon()
+
+
+/obj/item/weapon/gun/projectile/automatic/m1/Initialize()
+	. = ..()
+	update_icon()
