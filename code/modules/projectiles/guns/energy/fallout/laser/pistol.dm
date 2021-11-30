@@ -1,7 +1,7 @@
 /obj/item/gun/energy/gun/aep7
 	name = "\"AEP-7\" energy pistol"
-	desc = "The \"A"
-	icon = 'icons/obj/guns/energy/egun.dmi'
+	desc = "The \"AEP-7\" designed by REPCONN was a military grade laser pistol designed to replace the outdated AEP-5 that had been in service prior. With its improved battery it blasted away its competition!"
+	icon = 'icons/obj/guns/energy/aep.dmi'
 	icon_state = "aep7"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_SMALL
