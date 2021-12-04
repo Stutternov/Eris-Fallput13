@@ -22,10 +22,21 @@
 		list(mode_name="Melt", mode_desc="A much more potent plasma round for breaching tough opponents' hides", projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/Laser.ogg', fire_delay=12, charge_cost=125, icon="kill", projectile_color = "#FF0000"),
 	)
 
+/obj/item/gun/energy/plasma/rifle/on_update_icon()
+	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if (cell)
+		iconstring += "_mag"
+		itemstring += "_mag"
+
 /obj/item/gun/energy/plasma/rifle/p94
 	name = "\"Winchester P-94\" plasma rifle"
 	desc = "The P-94 plasma rifle made by Winchester was one of the first plasma weapons developed for the US Army. While technically older than the REPCONN plasma rifle this rifle packs a punch. \
 			Its more complex design was never fit for mass production, but its internals allowed a powerful plast to compete with the P-94 plasma caster heavy weapon - but in a more compact form!"
+	icon = 'icons/obj/guns/energy/p94.dmi'
 	icon_state = "p94"
 	suitable_cell = /obj/item/cell/medium/weapon/ecp
 	price_tag = 1400
@@ -34,11 +45,12 @@
 		list(mode_name="Melt", mode_desc="A much more potent plasma round for breaching tough opponents' hides", projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/Laser.ogg', fire_delay=12, charge_cost=125, icon="kill", projectile_color = "#FF0000"),
 		list(mode_name="EVISCERATE", mode_desc="An armor-stripping plasma round", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/pulse.ogg', fire_delay=14, charge_cost=150, icon="destroy", projectile_color = "#FFFFFF")
 	)
-
+/*
 /obj/item/gun/energy/plasma/rifle/caster
 	name = "\"P-94 Caster\" plasma rifle"
 	desc = "The big-brother of the P-94 \"Winchester\" rifle. This massive beast of a rifle uses a larger capacity cell but suffers reliability issues in return. \
 			Even before the Great War this gun was slightly out of date. However its simple and non-compact design has allowed wasteland jockies to keep these in service for years now."
+	icon = 'icons/obj/guns/energy/plasmacaster.dmi'
 	icon_state = "caster"
 	price_tag = 1400
 	suitable_cell = /obj/item/cell/medium/weapon/mfc
@@ -48,7 +60,7 @@
 		list(mode_name="Melt", mode_desc="A much more potent plasma round for breaching tough opponents' hides", projectile_type=/obj/item/projectile/plasma, fire_sound='sound/weapons/Laser.ogg', fire_delay=12, charge_cost=125, icon="kill", projectile_color = "#FF0000"),
 		list(mode_name="EVISCERATE", mode_desc="An armor-stripping plasma round", projectile_type=/obj/item/projectile/plasma/heavy, fire_sound='sound/weapons/pulse.ogg', fire_delay=14, charge_cost=150, icon="destroy", projectile_color = "#FFFFFF")
 	)
-
+*/
 /obj/item/gun/energy/plasma/pistol
 	name = "\"REPCONN\" plasma pistol"
 	desc = "A compact version of the plasma rifle that was designed to take electronic charge packs instead of MFC cells. Small and compact, this gun still packs a punch but lacks the charge of its original design."
