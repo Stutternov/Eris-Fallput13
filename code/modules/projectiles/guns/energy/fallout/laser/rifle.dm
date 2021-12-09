@@ -71,9 +71,9 @@
 
 /obj/item/gun/energy/recharger
 	name = "\"MFC Breeder\" recharging laser rifle"
-	icon = 'icons/obj/guns/energy/wattz2k.dmi'
-	icon_state = "wattz"
-	item_state = "wattz"
+	icon = 'icons/obj/guns/energy/recharger.dmi'
+	icon_state = "recharger"
+	item_state = "recharger"
 	desc = "The \"MFC Breeder\" appears to be a rare prototype weapon that was seeing US Army testing prior to the war. The MFC breeder houses an internal MFC cell, slowly recharging itself with its unique chemical compounds. \
 			Somehow after 200 years those chemicals inside the cell mount are still chugging, allowing the gun to continue recharging ever after all this time!"
 	w_class = ITEM_SIZE_BULKY
@@ -82,7 +82,7 @@
 	projectile_type = /obj/item/projectile/beam
 	zoom_factor = 0.2
 	fire_delay = 10
-	damage_multiplier = 1.2
+	damage_multiplier = 1
 	self_recharge = TRUE
 	price_tag = 1200
 	charge_cost = 125
