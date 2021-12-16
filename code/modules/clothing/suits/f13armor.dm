@@ -101,8 +101,8 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	armor = list(
 		melee = 30,
 		bullet = 30,
-		energy = 20,
-		bomb = 10,
+		energy = 25,
+		bomb = 15,
 		bio = 0,
 		rad = 0
 	)
