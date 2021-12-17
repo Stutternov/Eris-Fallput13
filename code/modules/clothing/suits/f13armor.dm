@@ -281,7 +281,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 		rad = 80
 	)
 
-/obj/item/clothing/suit/armor/heavy/f13/t45b/raider
+/obj/item/clothing/suit/armor/heavy/f13/t45b/hotrod
 	name = "hotrod T-45b power armor"
 	desc = "It's a set of T-45b power armor with some of its plating heavily reconditioned. This set has seen better days, metal scrap has been spot welded to the chassis "
 	icon_state = "t45hotrod"

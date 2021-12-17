@@ -1517,6 +1517,7 @@
 #include "code\modules\clothing\head\f13khans.dm"
 #include "code\modules\clothing\head\f13legion.dm"
 #include "code\modules\clothing\head\f13ncr.dm"
+#include "code\modules\clothing\head\f13town.dm"
 #include "code\modules\clothing\head\hardhat.dm"
 #include "code\modules\clothing\head\jobs.dm"
 #include "code\modules\clothing\head\mindreader.dm"
