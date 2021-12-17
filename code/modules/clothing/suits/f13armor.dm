@@ -43,9 +43,9 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
-		melee = 25,
+		melee = 20,
 		bullet = 10,
-		energy = 10,
+		energy = 15,
 		bomb = 5,
 		bio = 0,
 		rad = 0
@@ -53,16 +53,16 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 
 /obj/item/clothing/suit/armor/leathercombat
 	name = "combat leather jacket"
-	desc = "This leather jacket appears to sport heavier padding and possibly some reinforced sections. Making a fashion statement while ready to break some skulls."
+	desc = "This leather jacket appears to sport heavier padding and possibly some reinforced sections as well as metal studs. Making a fashion statement while ready to break some skulls."
 	icon_state = "combat_jacket"
 	item_state = "combat_jacket"
 	blood_overlay_type = "armor"
-	slowdown = 0.05
+	slowdown = 0.1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	armor = list(
 		melee = 25,
 		bullet = 20,
-		energy = 15,
+		energy = 10,
 		bomb = 10,
 		bio = 0,
 		rad = 0
@@ -75,15 +75,15 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 
 /obj/item/clothing/suit/armor/leatherarmor
 	name = "leather armor"
-	desc = "Your basic all leather apparel. Finely crafted from tanned brahmin hide."
+	desc = "Your basic all leather apparel. Finely crafted from tanned and hardened brahmin hide."
 	icon_state = "leather_armor"
 	item_state = "leather_armor"
 	slowdown = 0.1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
-		melee = 25,
-		bullet = 25,
-		energy = 20,
+		melee = 20,
+		bullet = 20,
+		energy = 15,
 		bomb = 10,
 		bio = 0,
 		rad = 0
@@ -100,9 +100,9 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	slowdown = 0.1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
-		melee = 30,
-		bullet = 30,
-		energy = 25,
+		melee = 25,
+		bullet = 25,
+		energy = 20,
 		bomb = 15,
 		bio = 0,
 		rad = 0
@@ -118,8 +118,8 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 25,
-		bullet = 35,
-		energy = 25,
+		bullet = 30,
+		energy = 20,
 		bomb = 10,
 		bio = 0,
 		rad = 0
@@ -135,7 +135,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 30,
-		bullet = 40,
+		bullet = 35,
 		energy = 25,
 		bomb = 10,
 		bio = 0,
@@ -148,12 +148,12 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
 	equip_delay = 1 SECONDS
-	slowdown = 0.15
+	slowdown = 0.2
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 30,
-		bullet = 45,
-		energy = 30,
+		bullet = 40,
+		energy = 25,
 		bomb = 15,
 		bio = 0,
 		rad = 5
@@ -165,11 +165,11 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
 	equip_delay = 1 SECONDS
-	slowdown = 0.15
+	slowdown = 0.2
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
-		melee = 40,
-		bullet = 35,
+		melee = 35,
+		bullet = 30,
 		energy = 25,
 		bomb = 20,
 		bio = 0,
@@ -186,7 +186,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 30,
-		bullet = 50,
+		bullet = 40,
 		energy = 35,
 		bomb = 20,
 		bio = 0,
@@ -203,7 +203,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 40,
-		bullet = 40,
+		bullet = 35,
 		energy = 30,
 		bomb = 25,
 		bio = 0,
@@ -218,13 +218,13 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	desc = "A set of pre-war salvage turned into a suit akin to what riot police or bomb squads used before the war."
 	icon_state = "juggernaut"
 	item_state = "juggernaut"
-	slowdown = 0.3
+	slowdown = 0.6
 	equip_delay = 2 SECONDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	armor = list(
 		melee = 35,
-		bullet = 55,
+		bullet = 45,
 		energy = 25,
 		bomb = 45,
 		bio = 40,
@@ -236,7 +236,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	desc = "An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
 	icon_state = "marinearmor"
 	item_state = "marinearmor"
-	slowdown = 0.3
+	slowdown = 0.8
 	equip_delay = 2 SECONDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
@@ -254,12 +254,12 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	desc = "It's a set of early-model T-45 power armor with a custom air conditioning module and stripped out servomotors. Bulky and slow, but almost as good as the real thing."
 	icon_state = "t45bpowerarmor"
 	item_state = "t45bpowerarmor"
-	slowdown = 0.5
+	slowdown = 1
 	equip_delay = 3 SECONDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	armor = list(
-		melee = 55,
+		melee = 50,
 		bullet = 60,
 		energy = 55,
 		bomb = 45,
@@ -273,23 +273,9 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	icon_state = "raiderpa"
 	item_state = "raiderpa"
 	armor = list(
-		melee = 70,
+		melee = 60,
 		bullet = 55,
 		energy = 45,
-		bomb = 40,
-		bio = 80,
-		rad = 80
-	)
-
-/obj/item/clothing/suit/armor/heavy/f13/t45b/hotrod
-	name = "hotrod T-45b power armor"
-	desc = "It's a set of T-45b power armor with some of its plating heavily reconditioned. This set has seen better days, metal scrap has been spot welded to the chassis "
-	icon_state = "t45hotrod"
-	item_state = "t45hotrod"
-	armor = list(
-		melee = 45,
-		bullet = 65,
-		energy = 65,
 		bomb = 40,
 		bio = 80,
 		rad = 80

@@ -167,7 +167,7 @@ is important it's not drastically so. So, unlike armor, helmets are sort of dire
 	action_button_name = "Toggle Headlamp"
 	brightness_on = 4
 	armor = list(
-		melee = 30,
+		melee = 35,
 		bullet = 40,
 		energy = 45,
 		bomb = 30,
@@ -183,8 +183,8 @@ is important it's not drastically so. So, unlike armor, helmets are sort of dire
 	body_parts_covered = HEAD | EARS | EYES
 	flash_protection = FLASH_PROTECTION_MAJOR
 	armor = list(
-		melee = 50,
-		bullet = 40,
+		melee = 45,
+		bullet = 45,
 		energy = 30,
 		bomb = 30,
 		bio = 10,
@@ -220,9 +220,9 @@ is important it's not drastically so. So, unlike armor, helmets are sort of dire
 	action_button_name = "Toggle Night Vision"
 	var/obj/item/clothing/glasses/bullet_proof_ironhammer/hud
 	armor = list(
-		melee = 50,
-		bullet = 60,
-		energy = 50,
+		melee = 45,
+		bullet = 50,
+		energy = 40,
 		bomb = 40,
 		bio = 50,
 		rad = 50
@@ -239,10 +239,10 @@ is important it's not drastically so. So, unlike armor, helmets are sort of dire
 	action_button_name = "Toggle Night Vision"
 	var/obj/item/clothing/glasses/bullet_proof_ironhammer/hud
 	armor = list(
-		melee = 55,
+		melee = 45,
 		bullet = 55,
-		energy = 45,
-		bomb = 45,
+		energy = 35,
+		bomb = 35,
 		bio = 50,
 		rad = 50
 	)
@@ -256,10 +256,10 @@ is important it's not drastically so. So, unlike armor, helmets are sort of dire
 	flash_protection = FLASH_PROTECTION_MAJOR
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	armor = list(
-		melee = 55,
-		bullet = 60,
-		energy = 50,
-		bomb = 45,
+		melee = 50,
+		bullet = 50,
+		energy = 45,
+		bomb = 40,
 		bio = 50,
 		rad = 50
 	)
@@ -269,23 +269,10 @@ is important it's not drastically so. So, unlike armor, helmets are sort of dire
 	desc = "A set of salvaged pre-war PA helmet with spikes added onto it for extra effect! Every junkie, bandit, robber, outlaw or serial killer LOVES some good flavorful spikes!"
 	icon_state = "raiderpa"
 	armor = list(
-		melee = 65,
-		bullet = 55,
-		energy = 45,
-		bomb = 45,
-		bio = 50,
-		rad = 50
-	)
-
-/obj/item/clothing/head/armor/f13/t45b/hotrod
-	name = "\"Hotrod\" salvaged power armor helmet"
-	desc = "A set of salvaged pre-war PA helmet with a sick new paintjob and heat resistent layering! Really makes up for how hot the average Hotrod suit gets.."
-	icon_state = "hotrod"
-	armor = list(
-		melee = 50,
-		bullet = 50,
-		energy = 55,
-		bomb = 50,
+		melee = 60,
+		bullet = 45,
+		energy = 35,
+		bomb = 35,
 		bio = 50,
 		rad = 50
 	)
