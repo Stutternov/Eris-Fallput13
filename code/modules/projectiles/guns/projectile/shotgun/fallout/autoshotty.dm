@@ -55,7 +55,7 @@
 	mag_well = MAG_WELL_RIFLE
 	price_tag = 1400
 	recoil_buildup = 14
-	magazine_type = /obj/item/ammo_magazine/shotgun
+	magazine_type = /obj/item/ammo_magazine/m12
 	init_firemodes = list(
 		FULL_AUTO_400,
 		SEMI_AUTO_NODELAY,

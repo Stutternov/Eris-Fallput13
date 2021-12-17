@@ -38,31 +38,13 @@ LT -> Centurion
 		MTERIAL_CLOTH = 20
 	)
 
-//Scout armor; equal to that of regular leather armor.
-/obj/item/clothing/suit/armor/f13/ncr/scout
-	name = "NCR scout armor"
-	desc = "A tanned brahmin leather light armor coated with NCR isignia and colors to be identifiable. Given to the expendable conscripts of the NCR."
-	icon_state = "scout"
-	item_state = "scout"
-	blood_overlay_type = "armor"
-	slowdown = 0.1
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	armor = list(
-		melee = 25,
-		bullet = 25,
-		energy = 20,
-		bomb = 10,
-		bio = 0,
-		rad = 0
-	)
-
 //Patrol Ranger armor; as good as reinforced leather.
 /obj/item/colthing/suit/armor/f13/ncr/patrolranger
-	name = "NCR patrol ranger jacket"
+	name = "NCR trail ranger jacket"
 	desc = "A tanned brahmin leather jacket made by locals of the Mojave and Arizona for the Ranger core. While serving little in the way of protection this armor allows for decent protection. \
 			At least it looks stylish!"
-	icon_state = "patrol"
-	item_state = "patrol"
+	icon_state = "trail"
+	item_state = "trail"
 	slowdown = 0.1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(

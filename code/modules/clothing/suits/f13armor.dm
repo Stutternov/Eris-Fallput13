@@ -21,7 +21,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	icon_state = "leather_jacket"
 	item_state = "leather_jacket"
 	blood_overlay_type = "armor"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	armor = list(
 		melee = 20,
 		bullet = 15,
@@ -98,6 +98,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	icon_state = "leather_armor_2"
 	item_state = "leather_armor_2"
 	slowdown = 0.1
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 30,
 		bullet = 30,
@@ -114,6 +115,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	item_state = "metal_armor"
 	equip_delay = 1 SECONDS
 	slowdown = 0.15
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 25,
 		bullet = 35,
@@ -130,6 +132,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	item_state = "metal_chestplate2"
 	equip_delay = 1 SECONDS
 	slowdown = 0.15
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 30,
 		bullet = 40,
@@ -146,6 +149,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	item_state = "combat_armor"
 	equip_delay = 1 SECONDS
 	slowdown = 0.15
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 30,
 		bullet = 45,
@@ -162,6 +166,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	item_state = "combat_armor"
 	equip_delay = 1 SECONDS
 	slowdown = 0.15
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 40,
 		bullet = 35,
@@ -178,6 +183,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	item_state = "combat_armor_mk2"
 	equip_delay = 1 SECONDS
 	slowdown = 0.2
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 30,
 		bullet = 50,
@@ -194,6 +200,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	item_state = "combat_armor_raider"
 	equip_delay = 1 SECONDS
 	slowdown = 0.2
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
 		melee = 40,
 		bullet = 40,
@@ -206,6 +213,24 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 
 //Heavy Armors
 
+/obj/item/clothing/suit/armor/heavy/f13/juggernaut
+	name = "juggernaut heavy armor"
+	desc = "A set of pre-war salvage turned into a suit akin to what riot police or bomb squads used before the war."
+	icon_state = "juggernaut"
+	item_state = "juggernaut"
+	slowdown = 0.3
+	equip_delay = 2 SECONDS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
+	armor = list(
+		melee = 35,
+		bullet = 55,
+		energy = 25,
+		bomb = 45,
+		bio = 40,
+		rad = 20
+	)
+
 /obj/item/clothing/suit/armor/heavy/f13/marine
 	name = "marine combat armor"
 	desc = "An excellent suit of pre-war U.S.M.C. armor found in rare and limited quantities in the wasteland. Surpassed only by newer suits of power armor."
@@ -213,6 +238,7 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	item_state = "marinearmor"
 	slowdown = 0.3
 	equip_delay = 2 SECONDS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	armor = list(
 		melee = 40,
@@ -229,6 +255,9 @@ Heavy armor - Heavy armor should be limited to special finds or specialist class
 	icon_state = "t45bpowerarmor"
 	item_state = "t45bpowerarmor"
 	slowdown = 0.5
+	equip_delay = 3 SECONDS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	armor = list(
 		melee = 55,
 		bullet = 60,
