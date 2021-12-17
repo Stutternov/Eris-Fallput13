@@ -246,3 +246,46 @@ is important it's not drastically so. So, unlike armor, helmets are sort of dire
 		bio = 50,
 		rad = 50
 	)
+
+/obj/item/clothing/head/armor/f13/t45b
+	name = "salvaged T-45b helmet"
+	desc = "A broken pre-war power armor helmet outfited to United States troops. Though this helmet looks like it's seen better days.."
+	icon_state = "t45b"
+	body_parts_covered = HEAD | EARS | EYES | FACE
+	flags_inv = BLOCKHEADHAIR|HIDEEARS|HIDEEYES|HIDEFACE
+	flash_protection = FLASH_PROTECTION_MAJOR
+	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
+	armor = list(
+		melee = 55,
+		bullet = 60,
+		energy = 50,
+		bomb = 45,
+		bio = 50,
+		rad = 50
+	)
+
+/obj/item/clothing/head/armor/f13/t45b/raider
+	name = "salvaged raider power armor helmet"
+	desc = "A set of salvaged pre-war PA helmet with spikes added onto it for extra effect! Every junkie, bandit, robber, outlaw or serial killer LOVES some good flavorful spikes!"
+	icon_state = "raiderpa"
+	armor = list(
+		melee = 65,
+		bullet = 55,
+		energy = 45,
+		bomb = 45,
+		bio = 50,
+		rad = 50
+	)
+
+/obj/item/clothing/head/armor/f13/t45b/hotrod
+	name = "\"Hotrod\" salvaged power armor helmet"
+	desc = "A set of salvaged pre-war PA helmet with a sick new paintjob and heat resistent layering! Really makes up for how hot the average Hotrod suit gets.."
+	icon_state = "hotrod"
+	armor = list(
+		melee = 50,
+		bullet = 50,
+		energy = 55,
+		bomb = 50,
+		bio = 50,
+		rad = 50
+	)
