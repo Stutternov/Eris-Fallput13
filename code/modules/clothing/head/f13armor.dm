@@ -3,6 +3,75 @@
 These should sport no slowdown modifiers but just less protection than their suit-armor counterparts. Helmets are important but mostly due to melee, bullets rarely hit heads. While head armor
 is important it's not drastically so. So, unlike armor, helmets are sort of direct upgrades or niches that get fufilled; such as visors, night vision, etc.*/
 
+//Regular Hats
+
+/obj/item/clothing/head/armor/f13/cowboy
+	name = "cowboy hat"
+	desc = "Made of Brahmin hide and stitching this frontiersman hat protects one's head from the sun quite well! Though.. not so great against - anything else."
+	icon_state = "helmet"
+	armor = list(
+		melee = 5,
+		bullet = 10,
+		energy = 5,
+		bomb = 5,
+		bio = 0,
+		rad = 0
+	)
+
+/obj/item/clothing/head/armor/f13/swatter
+	name = "swatters cap"
+	desc = "Hey batter-batter, SWING! This pre-war cap somehow survived the war! What a great relic, memorializing those who died in gladitorial swatter combat.."
+	icon_state = "swatter"
+	armor = list(
+		melee = 10,
+		bullet = 5,
+		energy = 5,
+		bomb = 5,
+		bio = 0,
+		rad = 0
+	)
+
+/obj/item/clothing/head/armor/f13/fedora
+	name = "fedora hat"
+	desc = "You - are a supreme gentleman. One of culture and class. One of extreme intelligence. God - you are just an insufferable prick, aren't you?"
+	icon_state = "fedora"
+	armor = list(
+		melee = 5,
+		bullet = 10,
+		energy = 5,
+		bomb = 5,
+		bio = 0,
+		rad = 0
+	)
+
+/obj/item/clothing/head/armor/f13/bowler
+	name = "bowler hat"
+	desc = "A glorious old pre-war hat worn by gentlemen and mobsters alike! This one even sports a tag inside saying 'Made in New Reno'! .. Well, that's among two others but - maybe!"
+	icon_state = "bowler"
+	armor = list(
+		melee = 5,
+		bullet = 5,
+		energy = 5,
+		bomb = 10,
+		bio = 0,
+		rad = 0
+	)
+
+//Regular Helmets
+
+/obj/item/clothing/head/armor/f13/stormchaser
+	name = "stormchaser hat"
+	desc = "A simple mix of a hood, goggles and a hat to fit onto ones head to protect them mostly from the enviorment. Though it seems these also have some reinforced materials!"
+	icon_state = "stormchaser"
+	armor = list(
+		melee = 15,
+		bullet = 15,
+		energy = 10,
+		bomb = 5,
+		bio = 0,
+		rad = 0
+	)
+
 /obj/item/clothing/head/armor/f13/firehelmet
 	name = "fire helmet"
 	desc = "An old pre-war firehelmet! It doesn't offer much protection but, hey, good pickup lines!"
