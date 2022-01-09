@@ -2,8 +2,8 @@
 	name = "hunting shotgun"
 	desc = "When an old Remington design meets modern materials, this is the result. A favourite weapon of militia forces throughout many worlds."
 	icon = 'icons/obj/guns/projectile/pumpaction.dmi'
-	icon_state = "shotgun"
-	item_state = "shotgun"
+	icon_state = "hunting"
+	item_state = "hunting"
 	max_shells = 4
 	w_class = ITEM_SIZE_HUGE
 	force = WEAPON_FORCE_PAINFUL
@@ -24,8 +24,8 @@
 /obj/item/gun/projectile/shotgun/pump/lever
 	name = "lever shotgun"
 	desc = "When an old Remington design meets modern materials, this is the result. A favourite weapon of militia forces throughout many worlds."
-	icon_state = "shotgun"
-	item_state = "shotgun"
+	icon_state = "lever"
+	item_state = "lever"
 	max_shells = 5
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
